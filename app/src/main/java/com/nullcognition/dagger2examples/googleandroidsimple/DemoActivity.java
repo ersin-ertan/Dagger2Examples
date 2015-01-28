@@ -10,7 +10,7 @@ public class DemoActivity extends Activity {
    protected void onCreate(Bundle inBundle){
 	  super.onCreate(inBundle);
 
-	  ((DemoActivity)getApplication()).component()
-									  .inject(this);
+	  ((DemoApplication)getApplication()).component()
+										 .inject(this);
    }
 }
