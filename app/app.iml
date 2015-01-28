@@ -38,6 +38,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/test/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/test/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/test/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/test/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/test/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
@@ -85,12 +86,37 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="appcompat-v7-21.0.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="maven-ant-tasks-2.1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="ant-1.8.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="espresso-core-2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="asm-commons-5.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="ant-launcher-1.8.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="asm-5.0.1" level="project" />
     <orderEntry type="library" exported="" name="dagger-2.0-SNAPSHOT" level="project" />
     <orderEntry type="library" exported="" name="javax.annotation-10.0-b28" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="fest-android-1.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="asm-util-5.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="jsr305-2.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="fest-util-1.2.5" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="commons-codec-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="robolectric-annotations-2.4" level="project" />
     <orderEntry type="library" exported="" name="support-v4-21.0.3" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javax.annotation-api-1.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="mockito-all-1.9.5" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="JUnitParams-1.0.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="sqlite4java-0.282" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="asm-tree-5.0.1" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-21.0.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="asm-analysis-5.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="vtd-xml-2.11" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-21.0.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="junit-4.11" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="testing-support-lib-0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="espresso-idling-resource-2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="robolectric-2.4" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="fest-assert-core-2.0M10" level="project" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

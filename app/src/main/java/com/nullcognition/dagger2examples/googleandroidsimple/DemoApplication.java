@@ -30,6 +30,9 @@ public class DemoApplication extends Application {
    @Override
    public void onCreate(){
 	  super.onCreate();
+
+	  // the double namespace is needed for this rather than the single namespace in xianglidais version
+	  // Dagger_thisclassname_interfacename because the interface is defined in this class
 	  component = Dagger_DemoApplication_ApplicationComponent.builder()
 															 .androidModule(new AndroidModule(this))
 															 .build();

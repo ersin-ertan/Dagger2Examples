@@ -6,7 +6,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.1'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4' //  Gradle plugin to support annotation processors in Android Gradle builds & Android Studio
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.14.1'
     }
 }
 

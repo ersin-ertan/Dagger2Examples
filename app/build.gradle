@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'robolectric'
 
 android {
     compileSdkVersion 21
@@ -11,20 +12,94 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            versionNameSuffix '-DEBUG-BUILD'
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
+    dexOptions {
+        jumboMode true
+    }
+    sourceSets {
+        // Remap the java & resources folders from the default src/androidTest location to src/test
+        androidTest.setRoot('src/androidTest')
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+    }
+
 }
+
+robolectric {
+
+    //configure the set of classes for JUnit tests
+    include '**/*Test.class'
+
+    //configure whether failing tests should fail the build
+    exclude '**/espresso/**/*.class'
+
+}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    def daggerVersion = "2.0-SNAPSHOT"
-    compile "com.google.dagger:dagger:${daggerVersion}"
-    apt "com.google.dagger:dagger-compiler:${daggerVersion}"
+
+    def dagger_version = "2.0-SNAPSHOT"
+    compile "com.google.dagger:dagger:${dagger_version}"
+    apt "com.google.dagger:dagger-compiler:${dagger_version}"
+
     provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+
+    androidTestCompile('junit:junit:4.11') {
+        exclude group: 'org.hamcrest'
+    }
+    androidTestCompile('org.robolectric:robolectric:2.4') {
+        exclude group: 'org.hamcrest'
+        exclude group: 'org.objenesis'
+    }
+    androidTestCompile('com.squareup:fest-android:1.0.8') {
+        exclude group: 'org.hamcrest'
+        exclude module: 'support-v4'
+        exclude module: 'appcompat'
+
+    }
+    androidTestCompile('org.mockito:mockito-all:1.9.5') {
+        exclude group: 'org.hamcrest'
+        exclude group: 'org.objenesis'
+    }
+    androidTestCompile('pl.pragmatists:JUnitParams:1.0.2') {
+        exclude group: 'org.hamcrest'
+    }
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.0') {
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'org.hamcrest'
+        exclude group: 'junit'
+        exclude group: 'javax.inject'
+    }
+    androidTestCompile('com.android.support.test:testing-support-lib:0.1') {
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'org.hamcrest'
+        exclude group: 'junit'
+    }
 }
