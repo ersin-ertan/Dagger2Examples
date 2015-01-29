@@ -7,14 +7,14 @@
 	<!-- Note: without naming your application the correct application, it will not work android:name=".ApplicationDemo"-->
 
 	<application
-		android:name=".googleandroidsimple.DemoApplication"
+		android:name=".consolidated.ConcreteApplication"
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
 		android:theme="@style/AppTheme"
 		>
 		<activity
-			android:name=".googleandroidsimple.ui.HomeActivity"
+			android:name=".consolidated.ConcreteActivity"
 			android:label="@string/app_name"
 			>
 			<intent-filter>

@@ -5,19 +5,19 @@ import android.app.Application;
  */
 public class ApplicationDemo extends Application {
 
-   private ComponentApplicationDemo componentApplicationDemo;
+   private ComponentApplicationDemo2 componentApplicationDemo1;
 
    @Override
    public void onCreate(){
 	  super.onCreate();
 
-	  componentApplicationDemo = Dagger_ComponentApplicationDemo.builder()
-																.moduleApplication(new ModuleApplication(this))
+	  componentApplicationDemo1 = Dagger_ComponentApplicationDemo2.builder()
+																 .moduleApplication(new ModuleApplication(this))
 																.build();
 
-	  componentApplicationDemo.injectApplication(this);
+	  componentApplicationDemo1.injectApplication(this);
    }
 
-   ComponentApplicationDemo getComponent(){return componentApplicationDemo;}
+   ComponentApplicationDemo2 getComponent(){return componentApplicationDemo1;}
 
 }

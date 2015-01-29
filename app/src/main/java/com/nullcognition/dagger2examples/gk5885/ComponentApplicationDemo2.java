@@ -5,7 +5,7 @@ import dagger.Component;
  */
 
 @Component(modules = ModuleApplication.class)
-interface ComponentApplicationDemo {
+interface ComponentApplicationDemo2 {
 
    ApplicationDemo injectApplication(ApplicationDemo inApplicationDemo);
 }

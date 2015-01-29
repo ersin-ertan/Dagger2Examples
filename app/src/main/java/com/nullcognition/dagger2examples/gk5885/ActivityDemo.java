@@ -15,7 +15,7 @@ public class ActivityDemo extends Activity implements HasComponent<ComponentActi
 	  super.onCreate(savedInstanceState);
 
 	  component = Dagger_ComponentActivityDemo.builder()
-											  .componentApplicationDemo(((ApplicationDemo)getApplication()).getComponent())
+											  .componentApplicationDemo2(((ApplicationDemo)getApplication()).getComponent())
 											  .moduleActivity(new ModuleActivity(this))
 											  .build();
 	  component.injectActivity(this);

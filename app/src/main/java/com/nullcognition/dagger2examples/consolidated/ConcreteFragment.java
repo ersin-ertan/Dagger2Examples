@@ -1,4 +1,4 @@
-package com.nullcognition.dagger2examples.gk5885;
+package com.nullcognition.dagger2examples.consolidated;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,18 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nullcognition.dagger2examples.R;
-
-// do we need import javax.inject.Inject;
-
-
 /**
- * Created by ersin on 27/01/1e5 at 8:03 AM
+ * Created by ersin on 28/01/15 at 6:04 PM
  */
-public class FragmentDemo extends Fragment {
+
+public class ConcreteFragment extends Fragment {
 
    interface Injector {
 
-	  FragmentDemo inject(FragmentDemo fragment);
+	  ConcreteFragment inject(ConcreteFragment fragment);
    }
 
    @Override
