@@ -24,10 +24,11 @@ public class ConcreteActivity extends Activity implements HasComponent<Component
    protected void onCreate(Bundle savedInstanceState){
 	  super.onCreate(savedInstanceState);
 
-	  componentOfActivity = Dagger_ComponentOfActivity.builder()
-													  .componentOfApplication(((ConcreteApplication)getApplication()).getComponentOfApplication())
-													  .moduleOfActivity(new ModuleOfActivity(this))
-													  .build();
+	  componentOfActivity = Dagger_ComponentOfActivity
+		.builder()
+		.componentOfApplication(((ConcreteApplication)getApplication()).getComponentOfApplication())
+		.moduleOfActivity(new ModuleOfActivity(this))
+		.build();
 	  componentOfActivity.injectActivity(this);
 
 	  setContentView(R.layout.activity_main);

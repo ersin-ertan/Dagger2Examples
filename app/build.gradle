@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'robolectric'
+apply plugin: 'retrolambda'
 
 android {
     compileSdkVersion 21
@@ -56,6 +57,12 @@ robolectric {
 
 }
 
+compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -68,6 +75,9 @@ dependencies {
     provided 'org.glassfish:javax.annotation:10.0-b28'
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
+    compile "org.projectlombok:lombok:1.16.0"
+    compile 'com.jakewharton:butterknife:6.1.0'
+
 
     androidTestCompile('junit:junit:4.11') {
         exclude group: 'org.hamcrest'
