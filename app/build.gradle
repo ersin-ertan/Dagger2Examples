@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'robolectric'
-apply plugin: 'retrolambda'
 
 android {
     compileSdkVersion 21
@@ -56,13 +55,6 @@ robolectric {
     exclude '**/espresso/**/*.class'
 
 }
-
-compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-}
-
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

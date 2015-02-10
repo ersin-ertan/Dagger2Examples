@@ -1,12 +1,14 @@
 package com.nullcognition.dagger2examples.mgrzechocinski;
 import android.app.Application;
 import android.content.Context;
+
+import com.nullcognition.dagger2examples.mgrzechocinski.internal.di.TheComponent;
 /**
  * Created by ersin on 07/02/15 at 2:01 AM
  */
 public class TheApplication extends Application {
 
-   private TheApplication component;
+   private TheComponent component;
 
    @Override
    public void onCreate(){
@@ -15,10 +17,10 @@ public class TheApplication extends Application {
    }
 
    public void buildComponentAndInject(){
-	  component = TheApplication.Initializer.init(this);
+	  component = TheComponent.Initializer.init(this);
    }
 
-   public static TheApplication component(Context context){
+   public static TheComponent component(Context context){
 	  return ((TheApplication)context.getApplicationContext()).component;
    }
 }

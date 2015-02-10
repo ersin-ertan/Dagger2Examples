@@ -31,5 +31,5 @@ public interface TheComponent {
 
    void inject(HomeActivity app);
 
-   TheCollectionUtils getD2EStringUtils();
+   TheCollectionUtils getTheStringUtils();
 }
