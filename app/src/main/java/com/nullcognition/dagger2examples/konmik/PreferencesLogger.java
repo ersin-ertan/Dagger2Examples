@@ -1,6 +1,5 @@
 package com.nullcognition.dagger2examples.konmik;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
@@ -13,15 +12,22 @@ import javax.inject.Inject;
  */
 public class PreferencesLogger {
 
+   @Inject // since we inject the SP(after constructor finished), no neeed for constructor args
+   SharedPreferences preferences; // not private becasue dagger needs access it
+
    public final String TAG = this.getClass()
 								 .getSimpleName();
 
    @Inject
    public PreferencesLogger(){}
 
-   public void log(Context inContext){
+   // public PreferencesLogger(SharedPreferences inSharedPreferences){ preferences = inSharedPreferences;}
+	// use this with constructor args if you want to use the object right away in the constructor
+	// in which case the SP is private, then there is no need to inject the shared prefrences
 
-	  SharedPreferences preferences = inContext.getSharedPreferences("preferences", 0);
+
+   public void log(){
+
 
 	  Log.v(TAG, "logging preferences");
 

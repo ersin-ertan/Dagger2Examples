@@ -11,7 +11,7 @@
 	<!-- In the case that you are injecting an application, below was taken out for glombard's example as it does not inject an application, but starts with an activity injection -->
 	<!-- android:name=".consolidated.ConcreteApplication" -->
 	<application
-		android:name=".practise.App"
+		android:name=".konmik.AppKon"
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name"
@@ -19,8 +19,8 @@
 		>
 
 		<activity
-			android:name=".practise.Act"
-			android:label="practise"
+			android:name=".konmik.ActivityKon"
+			android:label="konmik"
 			>
 
 			<intent-filter>

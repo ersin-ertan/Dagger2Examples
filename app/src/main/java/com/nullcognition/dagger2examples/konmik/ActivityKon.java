@@ -21,7 +21,7 @@ public class ActivityKon extends ActionBarActivity {
 
 	  AppKon.inject(this);
 
-	  logger.log(this);
+	  logger.log();
 
    }
 
