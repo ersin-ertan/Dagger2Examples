@@ -17,7 +17,7 @@ public class TheApplication extends Application {
    }
 
    public void buildComponentAndInject(){
-	  component = TheComponent.Initializer.init(this);
+	  //component = TheComponent.Initializer.init(this);
    }
 
    public static TheComponent component(Context context){

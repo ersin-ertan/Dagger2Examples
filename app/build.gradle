@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'robolectric'
 
+apply plugin: 'hugo'
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
