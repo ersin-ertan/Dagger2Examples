@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="15dp"
+              android:layout_height="match_parent"
+	>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
+		android:id="@+id/The_id_tv_util"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/click_hint"
+		android:layout_marginBottom="20dp"
+		android:id="@+id/The_id_tv_network_state"
+		/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/click_hint"
+		android:layout_marginBottom="20dp"
+		android:id="@+id/The_id_tv_pref"
+		/>
+
+	<Button
+		android:id="@+id/The_id_btn_load_preference"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/load_preference"
+		/>
+
+</LinearLayout>

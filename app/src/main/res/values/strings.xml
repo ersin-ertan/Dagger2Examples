@@ -1,8 +1,14 @@
 <resources>
+
 	<string name="app_name">Dagger2Examples</string>
 
 	<string name="hello_world">Hello world!</string>
 	<string name="action_settings">Settings</string>
 	<string name="title_activity_activity_buildup">ActivityBuildup</string>
 	<string name="title_activity_kon">KonActivity</string>
+	<string name="network_test">NetworkTest</string>
+	<string name="click_hint">Click Hind</string>
+	<string name="load_preference">Load Prefs</string>
+
+
 </resources>

@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'robolectric'
-
 apply plugin: 'hugo'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 21
@@ -34,6 +34,11 @@ android {
         // Remap the java & resources folders from the default src/androidTest location to src/test
         androidTest.setRoot('src/androidTest')
     }
+
+ compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+}
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
@@ -71,6 +76,7 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile "org.projectlombok:lombok:1.16.0"
     compile 'com.jakewharton:butterknife:6.1.0'
+
 
 
     androidTestCompile('junit:junit:4.11') {

@@ -1,5 +1,7 @@
 package com.nullcognition.dagger2examples.mgrzechocinski.internal.di;
+
 import com.nullcognition.dagger2examples.mgrzechocinski.TheApplication;
+import com.nullcognition.dagger2examples.mgrzechocinski.home.HomeActivity;
 import com.nullcognition.dagger2examples.mgrzechocinski.utils.TheCollectionUtils;
 
 import javax.inject.Singleton;
@@ -18,21 +20,20 @@ public interface TheComponent {
    @NoArgsConstructor(access = AccessLevel.PRIVATE)
    public final static class Initializer {
 
-	  // TODO find problem and fix, if refering to this example
 
-//	  public static TheComponent init(TheApplication app){
-//		 return Dagger_TheComponent.builder()
-//								   .systemServicesModule(new SystemServicesModule(app))
-//								   .build();
-//	  }
+	  public static TheComponent init(TheApplication app){
+		 return Dagger_TheComponent.builder()
+								   .systemServicesModule(new SystemServicesModule(app))
+								   .build();
+	  }
 
    }
 
    void inject(TheApplication app);
 
 
-   //
-   //void inject(HomeActivity app);
+
+   void inject(HomeActivity app);
 
    TheCollectionUtils getTheStringUtils();
 }
