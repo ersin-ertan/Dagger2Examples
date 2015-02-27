@@ -35,10 +35,10 @@ android {
         androidTest.setRoot('src/androidTest')
     }
 
- compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-}
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
@@ -77,6 +77,11 @@ dependencies {
     compile "org.projectlombok:lombok:1.16.0"
     compile 'com.jakewharton:butterknife:6.1.0'
 
+//    Joe steele's example
+    compile 'com.squareup.okhttp:okhttp:2.3.0-SNAPSHOT'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0-SNAPSHOT'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-SNAPSHOT'
 
 
     androidTestCompile('junit:junit:4.11') {
