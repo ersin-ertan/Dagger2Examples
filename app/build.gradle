@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'robolectric'
+//apply plugin: 'robolectric' // taken out to get testCompile to work
 apply plugin: 'hugo'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.nullcognition.dagger2examples"
@@ -53,33 +53,32 @@ android {
 
 }
 
-robolectric {
-
-    //configure the set of classes for JUnit tests
-    include '**/*Test.class'
-
-    //configure whether failing tests should fail the build
-    exclude '**/espresso/**/*.class'
-
-}
+//robolectric { // see above plugin removal
+//
+//    //configure the set of classes for JUnit tests
+//    include '**/*Test.class'
+//
+//    //configure whether failing tests should fail the build
+//    exclude '**/espresso/**/*.class'
+//
+//}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:22.0.0'
 
-    def dagger_version = "2.0-SNAPSHOT"
+    def dagger_version = "2.1-SNAPSHOT"
     compile "com.google.dagger:dagger:${dagger_version}"
     apt "com.google.dagger:dagger-compiler:${dagger_version}"
 
     provided 'org.glassfish:javax.annotation:10.0-b28'
-    compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
     compile "org.projectlombok:lombok:1.16.0"
     compile 'com.jakewharton:butterknife:6.1.0'
 
 //    Joe steele's example
     compile 'com.squareup.okhttp:okhttp:2.3.0-SNAPSHOT'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0-SNAPSHOT'
+    //compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0-SNAPSHOT' // to build joes example, find the most recent version
     compile 'com.squareup.picasso:picasso:2.5.0'
     compile 'com.squareup.retrofit:retrofit:2.0.0-SNAPSHOT'
 
