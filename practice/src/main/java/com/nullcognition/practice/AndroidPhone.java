@@ -6,8 +6,10 @@ import javax.inject.Singleton;
 @Singleton
 public class AndroidPhone{
 
-	public AndroidPhone(){}
-	public void callFriend(){}
+	public final int id = ++count;
+	private static int count = 0;
+
+	public String callFriend(){return String.valueOf(id);}
 
 }
 

@@ -4,7 +4,7 @@ package com.nullcognition.practice;
 
 public interface StoreComponent{
 
-	void inject(MainActivity mainActivity);
+	void inject(MainActivity activity);
+	// must be of exact type, any super type won't work
 
-	AndroidPhone provideAndroidPhone();
 }

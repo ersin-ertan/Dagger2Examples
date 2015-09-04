@@ -9,5 +9,6 @@ import dagger.Provides;
 @Module
 public class AndroidPhoneModule{
 
-	@Provides @Singleton public AndroidPhone provideAndroidPhone(){return new AndroidPhone();}
+	@Provides @Singleton
+	public AndroidPhone provideAndroidPhone(){return new AndroidPhone();}
 }

@@ -16,7 +16,8 @@ public class App extends Application{
 
 		if(googleComponent == null){
 			googleComponent = DaggerGoogleComponent.builder()
-			                                       .apiModule(new ApiModule()).build();
+			                                       .apiModule(new ApiModule())
+			                                       .build();
 		}
 	}
 }

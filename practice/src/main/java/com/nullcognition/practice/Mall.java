@@ -15,6 +15,7 @@ public class Mall extends Application{
 		if(storeComponent == null){
 			storeComponent = DaggerTechStoreComponent.builder()
 			                                         .androidPhoneModule(new AndroidPhoneModule())
+			                                         .applePhoneModule(new ApplePhoneModule())
 			                                         .build();
 		}
 	}
