@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
-
 android{
 	compileSdkVersion 23
 	buildToolsVersion "23.0.0"
 
 	defaultConfig{
-		applicationId "com.nullcognition.chiu_ki"
+		applicationId "com.nullcognition.practice"
 		minSdkVersion 15
 		targetSdkVersion 23
 		versionCode 1
@@ -27,3 +26,4 @@ dependencies{
 	compile 'com.google.dagger:dagger:2.0.1'
 	compile 'javax.annotation:javax.annotation-api:1.2'
 }
+

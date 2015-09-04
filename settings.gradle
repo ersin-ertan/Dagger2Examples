@@ -1,1 +1,1 @@
-include ':app', ':dagger2released', ':chiu-ki'
+include ':app', ':dagger2released', ':chiu-ki', ':fernando', ':froger', ':practice'
