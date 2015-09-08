@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Dagger2AndroidActivityGraphs.svg">
+   sodipodi:docname="Dagger2AndroidActivityGraphs.svg"
+   inkscape:export-filename="/home/ersin/Pictures/Inkscape/Dagger2ActivityGraphs.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="394.87773"
-     inkscape:cy="1009.6251"
+     inkscape:zoom="1.4"
+     inkscape:cx="560.38311"
+     inkscape:cy="1407.7662"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1057,7 +1060,7 @@
            id="tspan4346"
            y="-370.67349"
            x="261.42859"
-           sodipodi:role="line">   </tspan></text>
+           sodipodi:role="line" /></text>
     </g>
     <text
        xml:space="preserve"
@@ -1076,5 +1079,17 @@
        id="path4362"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="639.28571"
+       y="-532.63776"
+       id="text4326"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4328"
+         x="639.28571"
+         y="-532.63776"
+         style="font-size:25px">github.com/ersin-ertan</tspan></text>
   </g>
 </svg>
