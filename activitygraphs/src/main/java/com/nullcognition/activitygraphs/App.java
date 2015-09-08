@@ -10,6 +10,7 @@ import javax.inject.Inject;
 public class App extends Application{
 
 	private AppComponent appComponent;
+	public AppComponent getAppComponent(){ return appComponent;}
 	@Inject LocationManager locationManager;
 
 	@Override public void onCreate(){
@@ -19,5 +20,4 @@ public class App extends Application{
 		                                 .appModule(new AppModule(this))
 		                                 .build();
 	}
-	public AppComponent getAppComponent(){ return appComponent;}
 }

@@ -15,10 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="Dagger2AndroidActivityGraphs.svg"
-   inkscape:export-filename="/home/ersin/Pictures/Inkscape/Dagger2ActivityGraphs"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   sodipodi:docname="Dagger2AndroidActivityGraphs.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,17 +26,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-90.213627"
-     inkscape:cy="699.43897"
+     inkscape:cx="394.87773"
+     inkscape:cy="1009.6251"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:snap-text-baseline="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="696"
-     inkscape:window-x="320"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="876"
+     inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     showborder="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -56,575 +57,1024 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4136"
+       width="400.71429"
+       height="141.42857"
+       x="246.98845"
+       y="568.5094" />
     <g
-       id="g4310"
-       transform="matrix(2.0786483,0,0,1.8457796,-496.53007,-148.93719)">
+       id="g4173"
+       transform="translate(-18.534494,12.142857)">
       <rect
-         style="opacity:1;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:0.51052797;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4166"
-         width="283.85287"
-         height="77.781746"
-         x="277.79196"
-         y="486.67679" />
+         y="646.26831"
+         x="144.95686"
+         height="30.294373"
+         width="277.26648"
+         id="rect4152"
+         style="opacity:1;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
-         id="text4168"
-         y="497.78845"
-         x="307.0864"
+         id="text4154"
+         y="664.86401"
+         x="148.20802"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="497.78845"
-           x="307.0864"
-           id="tspan4170"
-           sodipodi:role="line">AppComponent(mod AppModule.class)</tspan></text>
+           y="664.86401"
+           x="148.20802"
+           id="tspan4156"
+           sodipodi:role="line">@Inject LocationManager locationManager;</tspan></text>
+    </g>
+    <g
+       id="g4519"
+       transform="translate(85.714286,0)">
+      <rect
+         y="603.36218"
+         x="370.71429"
+         height="83.571426"
+         width="342.14285"
+         id="rect4202"
+         style="opacity:1;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
-         id="text4172"
-         y="513.95093"
-         x="283.85287"
+         id="text4181"
+         y="626.64789"
+         x="375"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="513.95093"
-           x="283.85287"
-           id="tspan4174"
-           sodipodi:role="line">inject(App)</tspan></text>
+           y="626.64789"
+           x="375"
+           id="tspan4183"
+           sodipodi:role="line">onCreate()</tspan><tspan
+           id="tspan4187"
+           y="642.27289"
+           x="375"
+           sodipodi:role="line">    appComponent = DaggerAppComponent.builder()</tspan><tspan
+           id="tspan4189"
+           y="657.89789"
+           x="375"
+           sodipodi:role="line">    .appModule(new AppModule(this))</tspan><tspan
+           id="tspan4193"
+           y="673.52289"
+           x="375"
+           sodipodi:role="line">    .build();</tspan></text>
+    </g>
+    <g
+       id="g4512"
+       transform="translate(28.928571,0)">
+      <rect
+         style="opacity:1;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4142"
+         width="260.09387"
+         height="47.437229"
+         x="97.166405"
+         y="603.55402" />
       <text
          sodipodi:linespacing="125%"
-         id="text4176"
-         y="530.11334"
-         x="283.85287"
+         id="text4148"
+         y="622.14972"
+         x="102.60091"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="530.11334"
-           x="283.85287"
-           id="tspan4178"
-           sodipodi:role="line">Application applicatio();</tspan></text>
+           y="622.14972"
+           x="102.60091"
+           id="tspan4150"
+           sodipodi:role="line">private AppComponent appComponent;</tspan></text>
       <text
          sodipodi:linespacing="125%"
-         id="text4180"
-         y="550.31641"
-         x="282.84274"
+         id="text4198"
+         y="642.36224"
+         x="102.076"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="550.31641"
-           x="282.84274"
-           id="tspan4182"
+           y="642.36224"
+           x="102.076"
+           id="tspan4200"
+           sodipodi:role="line">public getAppComponent(){...}</tspan></text>
+    </g>
+    <rect
+       y="442.08081"
+       x="246.80542"
+       height="106.42857"
+       width="402.14285"
+       id="rect4212"
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="256.42911"
+       y="436.93359"
+       id="text4214"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4216"
+         x="256.42911"
+         y="436.93359">@Singleton @Component(modules  = AppModule.class)</tspan></text>
+    <rect
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4229"
+       width="163.57144"
+       height="27.142859"
+       x="633.9483"
+       y="487.08084" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="658.38843"
+       y="505.21936"
+       id="text4231"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4233"
+         x="658.38843"
+         y="505.21936">void inject App app;</tspan></text>
+    <g
+       id="g4265"
+       transform="translate(-141.94408,35.714285)">
+      <rect
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4243"
+         width="171.42857"
+         height="27.142859"
+         x="269.84558"
+         y="433.65225" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4252"
+         y="451.07648"
+         x="280.71429"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="451.07648"
+           x="280.71429"
+           id="tspan4254"
+           sodipodi:role="line">Application application();</tspan></text>
+    </g>
+    <g
+       id="g4260"
+       transform="translate(-70.540142,-1.428572)">
+      <rect
+         y="507.5094"
+         x="197.70273"
+         height="27.142859"
+         width="245.00002"
+         id="rect4245"
+         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4256"
+         y="526.79077"
+         x="206.42859"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="526.79077"
+           x="206.42859"
+           id="tspan4258"
            sodipodi:role="line">LocationManager locationManager();</tspan></text>
     </g>
+    <rect
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4360"
+       width="405.71426"
+       height="150.71428"
+       x="250.71429"
+       y="250.93362" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="336.4021"
+       y="268.38269"
+       id="text4366"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4368"
+         x="336.4021"
+         y="268.38269">@Module</tspan></text>
     <g
-       id="g4321"
-       transform="matrix(0.7479208,0,0,0.65904868,65.57998,332.82667)">
-      <g
-         id="g4519"
-         transform="matrix(2.7699521,0,0,2.786237,-759.68658,-725.42157)">
-        <rect
-           style="opacity:1;fill:#ff2a2a;fill-opacity:1;stroke:#000000;stroke-width:0.51270586;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect4138"
-           width="283.85287"
-           height="93.944191"
-           x="282.84271"
-           y="570.51947" />
-        <flowRoot
-           xml:space="preserve"
-           id="flowRoot4140"
-           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           transform="translate(120.92149,3.6055098e-8)"><flowRegion
-             id="flowRegion4142"><rect
-               id="rect4144"
-               width="166.67517"
-               height="49.497475"
-               x="291.93408"
-               y="576.58038" /></flowRegion><flowPara
-             id="flowPara4148"
-             style="font-size:12.5px">App</flowPara></flowRoot>        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="293.95438"
-           y="604.86462"
-           id="text4152"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan4154"
-             x="293.95438"
-             y="604.86462"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">-AppComponent</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="293.95438"
-           y="656.38239"
-           id="text4156"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="293.95438"
-             y="656.38239"
-             id="tspan4160">builder().appModule(new AppModule(this))</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="296.98483"
-           y="627.08795"
-           id="text4184"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             x="296.98483"
-             y="627.08795"
-             id="tspan4188">@Inject LocationManager</tspan></text>
-      </g>
+       id="g4162"
+       transform="translate(34.2658,5)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4138"
+         y="584.15649"
+         x="325.26913"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="584.15649"
+           x="325.26913"
+           id="tspan4140"
+           sodipodi:role="line">class App extends Application</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4144"
+         d="m 360.62446,588.19711 23.23351,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4146"
+         d="m 441.94174,587.69203 70.71068,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
-       id="g4334"
-       transform="matrix(2.1166809,0,0,1.8783877,-529.69684,-159.06246)">
-      <rect
-         y="405.86456"
-         x="284.86301"
-         height="72.73098"
-         width="282.84271"
-         id="rect4216"
-         style="opacity:1;fill:#e9c6af;fill-opacity:1;stroke:#000000;stroke-width:0.50151008;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       id="g4224"
+       transform="translate(-3.8299712,30.714285)">
       <text
          sodipodi:linespacing="125%"
          id="text4218"
-         y="414.95596"
-         x="389.91888"
+         y="428.07648"
+         x="378.57144"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="414.95596"
-           x="389.91888"
+           y="428.07648"
+           x="378.57144"
            id="tspan4220"
-           sodipodi:role="line">AppModule</tspan></text>
+           sodipodi:role="line">interface AppComponent</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4222"
+         d="m 439.42857,433.07649 95,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4450"
+       transform="translate(2.5122965,-16.428571)">
       <text
          sodipodi:linespacing="125%"
-         id="text4222"
-         y="435.159"
-         x="299.00516"
+         id="text4362"
+         y="285.21936"
+         x="397.14285"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="435.159"
-           x="299.00516"
-           id="tspan4224"
-           sodipodi:role="line">final Application</tspan></text>
+           y="285.21936"
+           x="397.14285"
+           id="tspan4364"
+           sodipodi:role="line">class AppModule</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4370"
+         d="m 429.28571,291.64792 75,0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4426"
+       transform="translate(-22.857143,-17.142857)">
+      <rect
+         y="300.93365"
+         x="456.67621"
+         height="43.571426"
+         width="362.14288"
+         id="rect4372"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
-         id="text4226"
-         y="453.34174"
-         x="294.96454"
+         id="text4374"
+         y="316.64792"
+         x="463.1048"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="453.34174"
-           x="294.96454"
-           id="tspan4228"
-           sodipodi:role="line">@Provides Application</tspan></text>
+           y="316.64792"
+           x="463.1048"
+           id="tspan4376"
+           sodipodi:role="line">public final Application application;</tspan><tspan
+           id="tspan4378"
+           y="332.27292"
+           x="463.1048"
+           sodipodi:role="line">public AppModule(Application app){application = app;}</tspan><tspan
+           id="tspan4380"
+           y="347.89792"
+           x="463.1048"
+           sodipodi:role="line" /></text>
+    </g>
+    <g
+       id="g4455"
+       transform="translate(-22.475366,-17.857143)">
+      <rect
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4391"
+         width="295.03952"
+         height="43.571426"
+         x="149.89197"
+         y="300.93365" />
       <text
          sodipodi:linespacing="125%"
-         id="text4230"
-         y="472.53467"
-         x="294.96454"
+         id="text4406"
+         y="318.35535"
+         x="156.17943"
          style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           y="472.53467"
-           x="294.96454"
-           id="tspan4232"
-           sodipodi:role="line">@Provides LocationManager</tspan></text>
+           y="318.35535"
+           x="156.17943"
+           id="tspan4408"
+           sodipodi:role="line">@Provides @Singleton</tspan><tspan
+           id="tspan4412"
+           y="333.98035"
+           x="156.17943"
+           sodipodi:role="line">Application application(){return application;}</tspan><tspan
+           id="tspan4410"
+           y="349.60535"
+           x="156.17943"
+           sodipodi:role="line" /></text>
+    </g>
+    <g
+       id="g4462"
+       transform="translate(-22.496699,0)">
+      <rect
+         y="337.93365"
+         x="150.60625"
+         height="53.571426"
+         width="512.89667"
+         id="rect4438"
+         style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4440"
+         y="352.3689"
+         x="157.7809"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="352.3689"
+           x="157.7809"
+           id="tspan4442"
+           sodipodi:role="line">@Provides @Singleton</tspan><tspan
+           id="tspan4448"
+           y="367.9939"
+           x="157.7809"
+           sodipodi:role="line">LocationManager provideLocationManager()</tspan><tspan
+           id="tspan4444"
+           y="383.6189"
+           x="157.7809"
+           sodipodi:role="line">		return (LocationManager) application.getSystemService(LOCATION_SERVICE);</tspan><tspan
+           id="tspan4446"
+           y="399.2439"
+           x="157.7809"
+           sodipodi:role="line" /></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 126.26907,303.79078 -106.26907,0 0,179.28571 106.26907,0 -106.26907,0 0,141.42857 106.26907,0"
+       id="path4568"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:0"
+       d="m 126.42857,360.93363 -77.142856,0 0,162.14286 76.983356,0 -76.26907,0 0,154.28571 76.26907,0"
+       id="path4570"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 795.33176,302.82902 68.34867,0 0,353.55339 -167.68533,0"
+       id="path4572"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       y="-32.847385"
+       x="246.98845"
+       height="253.57143"
+       width="400.71429"
+       id="rect4576"
+       style="opacity:1;fill:#01ff01;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <g
+       id="g4986"
+       transform="matrix(1.0141689,0,0,1,42.887327,0)">
+      <rect
+         style="opacity:1;fill:#01ff01;fill-opacity:1;stroke:#000000;stroke-width:1.98597991;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4580"
+         width="277.26648"
+         height="30.294373"
+         x="466.5239"
+         y="85.228409" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="469.77505"
+         y="103.82411"
+         id="text4582"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4584"
+           x="469.77505"
+           y="103.82411">@Inject LocationManager locationManager;</tspan></text>
+    </g>
+    <rect
+       y="19.177998"
+       x="516.02765"
+       height="55.287155"
+       width="281.5188"
+       id="rect4588"
+       style="opacity:1;fill:#01ff01;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4590"
+       y="41.719681"
+       x="540.24152"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="41.719681"
+         x="540.24152"
+         id="tspan4592"
+         sodipodi:role="line">onCreate()</tspan><tspan
+         id="tspan4598"
+         y="57.344681"
+         x="540.24152"
+         sodipodi:role="line">    homeActComponent.inject(this);</tspan></text>
+    <rect
+       style="opacity:1;fill:#01ff01;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4602"
+       width="329.43033"
+       height="204.28421"
+       x="126.09497"
+       y="2.197238" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4604"
+       y="20.792942"
+       x="131.52948"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="20.792942"
+         x="131.52948"
+         id="tspan4606"
+         sodipodi:role="line">private HomeActComponent homeActComponent;</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4608"
+       y="41.005466"
+       x="131.00456"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="41.005466"
+         x="131.00456"
+         id="tspan4610"
+         sodipodi:role="line">public getHomeActComponent(){</tspan><tspan
+         y="56.630466"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4736">   if(mainActivityComponent == null){</tspan><tspan
+         y="72.255463"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4740">		   mainActivityComponent =</tspan><tspan
+         y="87.880463"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4764">      DaggerMainActivityComponent.builder()</tspan><tspan
+         y="103.50546"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4744">				.appComponent(</tspan><tspan
+         y="119.13046"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4746">				   ((App) getApplication()).getAppComponent()</tspan><tspan
+         y="134.75546"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4748">				)</tspan><tspan
+         y="150.38046"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4750">				.activityModule(new ActivityModule(this))</tspan><tspan
+         y="166.00546"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4752">				.build();</tspan><tspan
+         y="181.63046"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4754">		}</tspan><tspan
+         y="197.25546"
+         x="131.00456"
+         sodipodi:role="line"
+         id="tspan4758">return mainActivityComponent;}</tspan></text>
+    <rect
+       style="opacity:1;fill:#a1bbff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4612"
+       width="256.68091"
+       height="106.42857"
+       x="246.80542"
+       y="-151.49063" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4614"
+       y="-157.35213"
+       x="108.42911"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-157.35213"
+         x="108.42911"
+         id="tspan4616"
+         sodipodi:role="line">@PerActivity @Component(modules  = ActivityModule.class)</tspan></text>
+    <g
+       id="g5018"
+       transform="translate(0,15.714286)">
+      <rect
+         y="-124.91917"
+         x="127.9015"
+         height="27.142859"
+         width="171.42857"
+         id="rect4626"
+         style="opacity:1;fill:#a1bbff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="138.77022"
+         y="-107.49495"
+         id="text4628"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4630"
+           x="138.77022"
+           y="-107.49495">Activity activity();</tspan></text>
+    </g>
+    <rect
+       y="-284.78064"
+       x="250.71429"
+       height="92.142853"
+       width="405.71426"
+       id="rect4640"
+       style="opacity:1;fill:#ff8181;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4642"
+       y="-263.08197"
+       x="336.33066"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-263.08197"
+         x="336.33066"
+         id="tspan4644"
+         sodipodi:role="line">@Module</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4648"
+       y="-12.200284"
+       x="298.10635"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="-12.200284"
+         x="298.10635"
+         id="tspan4650"
+         sodipodi:role="line">class HomeActivity extends AppCompatActivity</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4652"
+       d="m 333.46169,-8.1596679 80.37637,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4654"
+       d="m 476.20753,-8.6647477 116.24639,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       id="g4929"
+       transform="translate(-119.198,0)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="374.74149"
+         y="-135.49495"
+         id="text4658"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4660"
+           x="374.74149"
+           y="-135.49495">interface AbstractActivityComponent</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 435.59861,-130.49494 171.42857,0"
+         id="path4662"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(2.5122965,-547.85715)"
+       id="g4664">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="397.14285"
+         y="285.21936"
+         id="text4666"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4668"
+           x="397.14285"
+           y="285.21936">class ActivityModule</tspan></text>
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 429.28571,291.64792 75,0"
+         id="path4670"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5010"
+       transform="translate(0,65.714286)">
+      <rect
+         style="opacity:1;fill:#ff8181;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4674"
+         width="362.14288"
+         height="43.571426"
+         x="433.81906"
+         y="-310.4949" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="440.24765"
+         y="-294.78064"
+         id="text4676"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="440.24765"
+           y="-294.78064"
+           id="tspan4680">public final Activity activity;</tspan><tspan
+           sodipodi:role="line"
+           x="440.24765"
+           y="-279.15564"
+           id="tspan4682">public ActivityModule(Activity act){activity = act;}</tspan></text>
+    </g>
+    <g
+       id="g5003"
+       transform="translate(0,65.714286)">
+      <rect
+         y="-311.2092"
+         x="127.4166"
+         height="43.571426"
+         width="295.03952"
+         id="rect4686"
+         style="opacity:1;fill:#ff8181;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="133.70406"
+         y="-293.78751"
+         id="text4688"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="133.70406"
+           y="-293.78751"
+           id="tspan4692">@Provides @Peractivity</tspan><tspan
+           sodipodi:role="line"
+           x="133.70406"
+           y="-278.16251"
+           id="tspan5025">Activity activity(){return activity;}</tspan><tspan
+           sodipodi:role="line"
+           x="133.70406"
+           y="-262.53751"
+           id="tspan4694" /></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4710"
+       d="M 126.26907,-218.35622 20,-219.78479 20,-97.932425 126.26907,-97.427348 20,-97.932425 l 0,211.013055 106.26907,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path4714"
+       d="m 795.45052,-222.06873 111.01138,0 0,369.06316 -483.56103,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="-151.49063"
+       x="518.60236"
+       height="112.48949"
+       width="268.80273"
+       id="rect4934"
+       style="opacity:1;fill:#8181ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="520.22601"
+       y="-157.35213"
+       id="text4936"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4938"
+         x="520.22601"
+         y="-157.35213">@PerActivity @Component(modules  = ActivityModule.class)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:145.00000477%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="531.34045"
+       y="-135.49495"
+       id="text4942"
+       sodipodi:linespacing="145%"><tspan
+         sodipodi:role="line"
+         id="tspan4944"
+         x="531.34045"
+         y="-135.49495">interface HomeActivityComponent</tspan><tspan
+         id="tspan4950"
+         sodipodi:role="line"
+         x="531.34045"
+         y="-117.36995">     extends AbstractActivityComponent</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 592.19756,-130.49494 158.29658,0"
+       id="path4946"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4958"
+       d="m 612.19756,-112.49494 158.29658,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       id="g4976"
+       transform="translate(-70.710678,0)">
+      <rect
+         style="opacity:1;fill:#8181ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4960"
+         width="185.71428"
+         height="27.142859"
+         x="682.47522"
+         y="-105.72626" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4964"
+         y="-88.209229"
+         x="684.85718"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-88.209229"
+           x="684.85718"
+           id="tspan4966"
+           sodipodi:role="line">void inject(HomeActivity ha);</tspan></text>
+    </g>
+    <g
+       id="g4981"
+       transform="translate(-56.568543,0)">
+      <rect
+         y="-73.401375"
+         x="682.47522"
+         height="27.142859"
+         width="171.42857"
+         id="rect4962"
+         style="opacity:1;fill:#8181ff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4968"
+         y="-56.209225"
+         x="690"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-56.209225"
+           x="690"
+           id="tspan4970"
+           sodipodi:role="line">void inject(HomeFrag hf);</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 797.59027,-94.780654 48.88651,0 -0.50507,127.142858 -49.30164,0"
+       id="path4972"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -117.14286,234.64792 1108.57143,0"
+       id="path5016"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g5039"
+       transform="translate(4.9492372,-69.754896)">
+      <rect
+         y="-123.45536"
+         x="-252.53815"
+         height="56.568546"
+         width="214.15234"
+         id="rect5027"
+         style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5029"
+         y="-101.232"
+         x="-241.42645"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-101.232"
+           x="-241.42645"
+           id="tspan5031"
+           sodipodi:role="line">@Scope</tspan><tspan
+           id="tspan5035"
+           y="-85.607002"
+           x="-241.42645"
+           sodipodi:role="line">public @interface PerActivity{}</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path5045"
+       d="m -117.14286,-304.77354 1095.71429,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:7.99999999, 7.99999999;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -18.571429,-41.92351 -152.857141,0 0,480 154.285713,0"
+       id="path5047"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;text-anchor:middle;text-align:center;"
+       x="-266.18723"
+       y="205.21935"
+       id="text5049"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5051"
+         x="-352.85715"
+         y="205.21935">Object, Component, Module</tspan><tspan
+         sodipodi:role="line"
+         x="-352.85715"
+         y="220.84435"
+         id="tspan5053">Composition</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 924.28571,-3.6622841 127.14289,0.2560695 0,490.1062846 -167.14289,0"
+       id="path5055"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1125.494"
+       y="222.3622"
+       id="text5057"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5059"
+         x="1125.494"
+         y="222.3622">Modules Constructor</tspan><tspan
+         sodipodi:role="line"
+         x="1125.494"
+         y="237.9872"
+         id="tspan5061">Parameter</tspan></text>
+    <rect
+       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5063"
+       width="286.3782"
+       height="104.04572"
+       x="320.87891"
+       y="-597.31329" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="334.51593"
+       y="-583.1712"
+       id="text5065"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="334.51593"
+         y="-583.1712"
+         id="tspan5069">@PerActivity class ActivityTitleController</tspan></text>
+    <rect
+       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1.99999988;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5091"
+       width="226.77924"
+       height="21.213203"
+       x="126.79112"
+       y="-572.56458" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="149.01091"
+       y="-558.50952"
+       id="text5071"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5073"
+         x="149.01091"
+         y="-558.50952">public final Activity activity;</tspan><tspan
+         sodipodi:role="line"
+         x="149.01091"
+         y="-542.88452"
+         id="tspan5075" /></text>
+    <g
+       id="g5085"
+       transform="translate(146.48911,-148.58884)">
+      <rect
+         y="-397.2067"
+         x="-22.728432"
+         height="39.901024"
+         width="325.7742"
+         id="rect5083"
+         style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5077"
+         y="-383.56964"
+         x="-17.67767"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-383.56964"
+           x="-17.67767"
+           id="tspan5079"
+           sodipodi:role="line">@Inject public ActivityTitleController(Activity act){</tspan><tspan
+           id="tspan5081"
+           y="-367.94464"
+           x="-17.67767"
+           sodipodi:role="line">   activity = act;}</tspan></text>
+    </g>
+    <rect
+       style="opacity:1;fill:#82ff82;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5129"
+       width="281.42856"
+       height="142.85713"
+       x="322.14288"
+       y="-467.63779" />
+    <g
+       id="g4328"
+       transform="translate(-122.14285,4.2857071)">
+      <rect
+         y="-436.20923"
+         x="533.57141"
+         height="29.285715"
+         width="287.85715"
+         id="rect5131"
+         style="opacity:1;fill:#82ff82;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5137"
+         y="-418.20923"
+         x="538.57141"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-418.20923"
+           x="538.57141"
+           id="tspan5139"
+           sodipodi:role="line">@Inject ActivityTitleController titleController;</tspan></text>
+    </g>
+    <g
+       id="g4333"
+       transform="matrix(0.987073,0,0,1,-108.89067,-5.7142929)">
+      <rect
+         y="-384.78067"
+         x="527.85712"
+         height="59.285717"
+         width="390.71429"
+         id="rect5133"
+         style="opacity:1;fill:#82ff82;fill-opacity:1;stroke:#000000;stroke-width:2.01305366;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5141"
+         y="-367.20923"
+         x="532.14288"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-367.20923"
+           x="532.14288"
+           id="tspan5143"
+           sodipodi:role="line">onActivityCreated</tspan><tspan
+           id="tspan5145"
+           y="-351.58423"
+           x="532.14288"
+           sodipodi:role="line">   ((HomeActivity) getActivity())</tspan><tspan
+           id="tspan4326"
+           y="-335.95923"
+           x="532.14288"
+           sodipodi:role="line">      .getHomeActivityComponent().inject(this);</tspan></text>
+    </g>
+    <g
+       id="g4350"
+       transform="translate(-120.74401,6.4285641)">
+      <rect
+         y="-424.78067"
+         x="247.14287"
+         height="60"
+         width="252.85715"
+         id="rect5135"
+         style="opacity:1;fill:#82ff82;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4340"
+         y="-401.92349"
+         x="261.42859"
+         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-401.92349"
+           x="261.42859"
+           id="tspan4342"
+           sodipodi:role="line">onResume</tspan><tspan
+           id="tspan4348"
+           y="-386.29849"
+           x="261.42859"
+           sodipodi:role="line">   titleController.setTitle();</tspan><tspan
+           id="tspan4346"
+           y="-370.67349"
+           x="261.42859"
+           sodipodi:role="line">   </tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:8.83183765px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="490.94128"
-       y="627.70282"
-       id="text4244"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0652818,0.93871874)"><tspan
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="354.37634"
+       y="-446.20923"
+       id="text4358"
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan4246"
-         x="490.94128"
-         y="627.70282">   </tspan></text>
-    <g
-       id="g4345"
-       transform="matrix(2.1171697,0,0,1.8747026,-528.3216,-152.81213)">
-      <rect
-         style="opacity:1;fill:#917c6f;fill-opacity:1;stroke:#000000;stroke-width:0.50194478;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4234"
-         width="282.84271"
-         height="72.73098"
-         x="285.14871"
-         y="323.86456" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4236"
-         y="338.18436"
-         x="289.75278"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="338.18436"
-           x="289.75278"
-           id="tspan4238"
-           sodipodi:role="line">AbstarctActivityComponent</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4240"
-         y="320.91025"
-         x="293.7934"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="320.91025"
-           x="293.7934"
-           id="tspan4242"
-           sodipodi:role="line">dep AppComp, mod ActivityModule</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4268"
-         y="362.42801"
-         x="296.82385"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           id="tspan4272"
-           y="362.42801"
-           x="296.82385"
-           sodipodi:role="line">Activity activity();</tspan></text>
-    </g>
-    <g
-       id="g4354"
-       transform="matrix(2.1037826,0,0,1.8614896,-522.61055,-141.4632)">
-      <rect
-         y="226.88992"
-         x="285.14871"
-         height="72.73098"
-         width="282.84271"
-         id="rect4276"
-         style="opacity:1;fill:#ac9d93;fill-opacity:1;stroke:#000000;stroke-width:0.50532317;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="284.70203"
-         y="240.19957"
-         id="text4278"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan4280"
-           x="284.70203"
-           y="240.19957">ActivityComponent ext AbstractActivityComp</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         x="293.7934"
-         y="223.93561"
-         id="text4282"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan4284"
-           x="293.7934"
-           y="223.93561">dep AppComp, mod ActivityModule</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4290"
-         y="268.48383"
-         x="291.77307"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="268.48383"
-           x="291.77307"
-           id="tspan4292"
-           sodipodi:role="line">void inject(MainActivity mainActivity);</tspan><tspan
-           id="tspan4294"
-           y="284.10883"
-           x="291.77307"
-           sodipodi:role="line">invoid inject(mainFragment mainFragment);</tspan></text>
-    </g>
-    <g
-       id="g4364"
-       transform="matrix(2.0202293,0,0,1.7949503,-475.12943,-123.00822)">
-      <rect
-         style="opacity:1;fill:#c8beb7;fill-opacity:1;stroke:#000000;stroke-width:0.52513796;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect4296"
-         width="282.84271"
-         height="72.73098"
-         x="285.14871"
-         y="131.17564" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4298"
-         y="143.79079"
-         x="395.71426"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="143.79079"
-           x="395.71426"
-           id="tspan4300"
-           sodipodi:role="line">ActivityModule</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4302"
-         y="162.3622"
-         x="298.57141"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="162.3622"
-           x="298.57141"
-           id="tspan4304"
-           sodipodi:role="line">final Activity</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4306"
-         y="182.3622"
-         x="301.42856"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="182.3622"
-           x="301.42856"
-           id="tspan4308"
-           sodipodi:role="line">@Provides @PerActivity Activity</tspan></text>
-    </g>
-    <g
-       id="g4381"
-       transform="matrix(2.1800943,0,0,2.2063691,-475.28376,-209.82365)">
-      <rect
-         y="150.93362"
-         x="107.14287"
-         height="47.142849"
-         width="150.00002"
-         id="rect4373"
-         style="opacity:1;fill:#e3dedb;fill-opacity:1;stroke:#000000;stroke-width:0.45595634;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4375"
-         y="172.3622"
-         x="114.28571"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="172.3622"
-           x="114.28571"
-           id="tspan4377"
-           sodipodi:role="line">@Scope</tspan><tspan
-           id="tspan4379"
-           y="187.9872"
-           x="114.28571"
-           sodipodi:role="line">@interface PerActivity</tspan></text>
-    </g>
-    <g
-       id="g4405"
-       transform="matrix(2.3554044,0,0,2.358855,-1223.4336,-936.69533)">
-      <rect
-         y="266.64792"
-         x="472.85715"
-         height="61.428574"
-         width="150"
-         id="rect4387"
-         style="opacity:1;fill:#e3dedb;fill-opacity:1;stroke:#000000;stroke-width:0.42424491;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4389"
-         y="280.93362"
-         x="484.28571"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="280.93362"
-           x="484.28571"
-           id="tspan4391"
-           sodipodi:role="line">ActivityTitleController</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4393"
-         y="262.07648"
-         x="472.85715"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="262.07648"
-           x="472.85715"
-           id="tspan4395"
-           sodipodi:role="line">@PerActivity</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4397"
-         y="305.21933"
-         x="478.57144"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="305.21933"
-           x="478.57144"
-           id="tspan4399"
-           sodipodi:role="line">final Actttivity</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4401"
-         y="320.93362"
-         x="475.71429"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="320.93362"
-           x="475.71429"
-           id="tspan4403"
-           sodipodi:role="line">void setTitle</tspan></text>
-    </g>
-    <g
-       id="g4463"
-       transform="matrix(1.8065319,0,0,1.8121353,297.6812,-160.19252)">
-      <rect
-         y="10.933633"
-         x="61.42857"
-         height="127.14286"
-         width="280"
-         id="rect4416"
-         style="opacity:1;fill:#c8ab37;fill-opacity:1;stroke:#000000;stroke-width:0.55269027;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4418"
-         y="25.219347"
-         x="142.85715"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="25.219347"
-           x="142.85715"
-           id="tspan4420"
-           sodipodi:role="line">MainActivity</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4422"
-         y="40.933632"
-         x="67.14286"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="40.933632"
-           x="67.14286"
-           id="tspan4424"
-           sodipodi:role="line">@Inject LocationManager</tspan><tspan
-           id="tspan4426"
-           y="56.558632"
-           x="67.14286"
-           sodipodi:role="line">private MainActivityComponent;</tspan><tspan
-           id="tspan4430"
-           y="72.183632"
-           x="67.14286"
-           sodipodi:role="line" /><tspan
-           id="tspan4432"
-           y="87.808632"
-           x="67.14286"
-           sodipodi:role="line">MainActivityComponent getMainActComp;</tspan><tspan
-           id="tspan4428"
-           y="103.43363"
-           x="67.14286"
-           sodipodi:role="line" /></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4434"
-         y="110.07648"
-         x="65.714287"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="110.07648"
-           x="65.714287"
-           id="tspan4436"
-           sodipodi:role="line">onCreate - mainActivityComp.inject(this);</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4438"
-         y="129.50507"
-         x="68.571426"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="129.50507"
-           x="68.571426"
-           id="tspan4440"
-           sodipodi:role="line">if(savedIn == null) add fragment;</tspan></text>
-      <path
-         id="rect4442"
-         d="M 370,16.648438 370,52.068359 337.14258,83.791016 370,101.31445 l 0,38.19141 202.85742,0 0,-122.857422 -202.85742,0 z"
-         style="opacity:1;fill:#c8ab37;fill-opacity:1;stroke:#000000;stroke-width:0.55269027;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         inkscape:connector-curvature="0" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4447"
-         y="33.790775"
-         x="375.71429"
-         style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="33.790775"
-           x="375.71429"
-           id="tspan4449"
-           sodipodi:role="line">if (mainActComp == null)</tspan><tspan
-           id="tspan4451"
-           y="49.415775"
-           x="375.71429"
-           sodipodi:role="line">mac = DaggerMAC.builder()</tspan><tspan
-           id="tspan4453"
-           y="65.040771"
-           x="375.71429"
-           sodipodi:role="line">.appComponent(</tspan><tspan
-           id="tspan4455"
-           y="80.665771"
-           x="375.71429"
-           sodipodi:role="line">    ((App)getApplication()).getAppComp()</tspan><tspan
-           id="tspan4457"
-           y="96.290771"
-           x="375.71429"
-           sodipodi:role="line">                          )</tspan><tspan
-           id="tspan4459"
-           y="111.91577"
-           x="375.71429"
-           sodipodi:role="line">activityModule(new AM(this))</tspan><tspan
-           id="tspan4461"
-           y="127.54077"
-           x="375.71429"
-           sodipodi:role="line">.build();</tspan></text>
-    </g>
-    <g
-       id="g4507"
-       transform="matrix(2.2723939,0,0,2.2742811,-1306.9543,-545.38014)">
-      <rect
-         y="173.43703"
-         x="478.49677"
-         height="103.47082"
-         width="265.29422"
-         id="rect4487"
-         style="opacity:1;fill:#c8ab37;fill-opacity:1;stroke:#000000;stroke-width:0.43988192;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:20.20000076;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         transform="scale(1.0000239,0.99997609)"
-         sodipodi:linespacing="125%"
-         id="text4489"
-         y="188.85208"
-         x="570.95081"
-         style="font-style:normal;font-weight:normal;font-size:9.63182259px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="188.85208"
-           x="570.95081"
-           id="tspan4491"
-           sodipodi:role="line">Mainfragment</tspan></text>
-      <text
-         transform="scale(1.0000239,0.99997609)"
-         sodipodi:linespacing="125%"
-         id="text4493"
-         y="209.76689"
-         x="487.2916"
-         style="font-style:normal;font-weight:normal;font-size:9.63182259px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="209.76689"
-           x="487.2916"
-           id="tspan4495"
-           sodipodi:role="line">@Inject ActivityTitleController</tspan></text>
-      <text
-         transform="scale(1.0000239,0.99997609)"
-         sodipodi:linespacing="125%"
-         id="text4497"
-         y="226.27856"
-         x="487.2916"
-         style="font-style:normal;font-weight:normal;font-size:9.63182259px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="226.27856"
-           x="487.2916"
-           id="tspan4499"
-           sodipodi:role="line">onActivityCReated - ((MainActivity)getActivity())</tspan><tspan
-           id="tspan4501"
-           y="238.31834"
-           x="487.2916"
-           sodipodi:role="line">  .getMainACtivityComponent().inject(this);</tspan><tspan
-           id="tspan4503"
-           y="250.35812"
-           x="487.2916"
-           sodipodi:role="line" /><tspan
-           id="tspan4505"
-           y="262.39789"
-           x="487.2916"
-           sodipodi:role="line">onResume titleController.setTitle()</tspan></text>
-    </g>
+         id="tspan4360"
+         x="354.37634"
+         y="-446.20923">class HomeFrag extends Fragment</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 797.14286,-56.258093 197.14285,0 0,-312.759417 -196.06092,0"
+       id="path4362"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>
