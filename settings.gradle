@@ -1,1 +1,1 @@
-include ':app', ':dagger2released', ':chiu-ki', ':fernando', ':froger', ':practice', ':simple', ':activitygraphs'
+include ':app', ':chiu-ki', ':fernando', ':froger', ':practice', ':simple', ':activitygraphs', ':gk5885'
