@@ -6,7 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Qualifier;
 
-@Qualifier // the ScopeApplication annotation has its @Qualifier annotation when type alone is not enough
+@Qualifier
+// the ScopeApplication annotation has its @Qualifier annotation when type alone is not enough
 // to  identify the dependency, this is the same as using @Named, thus would have
 //String value() default ""; as this classes field
 @Retention(RetentionPolicy.RUNTIME)
