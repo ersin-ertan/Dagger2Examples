@@ -40,8 +40,8 @@ import dagger.Subcomponent;
 
 		@Provides @UserScope User provideUser(){return user;}
 
-		@Provides @UserScope Integer provideUserData(User user, Map<User, Integer> dataMap){
-			return dataMap.get(user);
+		@Provides @UserScope DataManager provideUserData(User user, DataManager.ApiService apiService){
+			return new DataManager(user, apiService);
 		}
 	}
 
@@ -54,3 +54,16 @@ import dagger.Subcomponent;
 
 
 @Scope @Retention(RetentionPolicy.RUNTIME) @interface UserScope{ }
+
+
+class UserManager{
+
+	private DataManager.ApiService apiService;
+	public UserManager(DataManager.ApiService as){apiService = as;}
+
+	public User getUser(String name){
+		Map<User, String> map = apiService.getUserData();
+		if("u00".equals(name)){ return DataManager.ApiService.u00; }
+		else{ return DataManager.ApiService.u01; }
+	}
+}

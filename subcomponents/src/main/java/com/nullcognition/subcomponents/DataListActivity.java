@@ -3,22 +3,34 @@ package com.nullcognition.subcomponents;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
+import javax.inject.Inject;
 import javax.inject.Scope;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import dagger.Module;
 import dagger.Provides;
 import dagger.Subcomponent;
 
 public class DataListActivity extends BaseActivity{
 
+
+	@Inject
+	@Bind(R.id.listView) ListView listView;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_data_list);
+		ButterKnife.bind(this);
+//		listView.setAdapter(new SimpleAdapter(this, ));
+
 	}
 
 	@Override
