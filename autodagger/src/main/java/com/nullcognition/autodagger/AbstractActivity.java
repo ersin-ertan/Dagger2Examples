@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import autodagger.AutoInjector;
 
-@AutoComponetedAnnotation
+@AutoComponentedAnnotation
 @AutoInjector
 @AppScope(AbstractActivity.class)
 public abstract class AbstractActivity extends Activity{
@@ -18,8 +18,8 @@ public abstract class AbstractActivity extends Activity{
 
 		if(abstractActivityComponent == null){
 			abstractActivityComponent = DaggerAbstractActivityComponent.builder()
-					.appComponent(((App) getApplication()).getAppComponent())
-					.build();
+			                                                           .appComponent(((App) getApplication()).getAppComponent())
+			                                                           .build();
 		}
 		abstractActivityComponent.inject(this);
 	}

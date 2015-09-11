@@ -4,8 +4,6 @@ package com.nullcognition.autodagger;
 
 import android.app.Application;
 
-import javax.inject.Scope;
-
 import autodagger.AutoComponent;
 import autodagger.AutoExpose;
 import dagger.Provides;
@@ -38,7 +36,3 @@ public class App extends Application{
 }
 
 
-@Scope @interface AppScope{
-
-	Class<?> value();
-}

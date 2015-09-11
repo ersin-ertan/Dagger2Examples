@@ -5,8 +5,8 @@ import autodagger.AutoComponent;
 
 @AutoComponent(
 		dependencies = App.class,
-		superinterfaces = {DependencyOne.class, DependencyTwo.class},
+		superinterfaces = { DependencyOne.class, DependencyTwo.class },
 		modules = StandardModule.class
 )
-public @interface AutoComponetedAnnotation{
+public @interface AutoComponentedAnnotation{
 }

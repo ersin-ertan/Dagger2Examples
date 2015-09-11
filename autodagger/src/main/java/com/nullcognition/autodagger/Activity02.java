@@ -35,6 +35,9 @@ public class Activity02 extends Activity{
 		component.inject(this);
 	}
 
+	@Component @AppScope(SomeOtherComponent.class) public interface SomeOtherComponent{ }
+
+
 	@Module
 	public static class ModuleOne{
 
@@ -47,9 +50,6 @@ public class Activity02 extends Activity{
 
 	@Module
 	public static class ModuleTwo{ }
-
-
-	@Component @AppScope(SomeOtherComponent.class) public interface SomeOtherComponent{ }
 }
 
 

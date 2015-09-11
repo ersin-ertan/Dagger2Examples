@@ -2,6 +2,9 @@ package com.nullcognition.autodagger;
 // ersin 10/09/15 Copyright (c) 2015+ All rights reserved.
 
 
-public class Provideable{
+import javax.inject.Scope;
+
+@Scope @interface AppScope{
+
+	Class<?> value();
 }
-// did not understand the difference between the examples restclient1 vs 2
