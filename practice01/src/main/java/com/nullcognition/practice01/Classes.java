@@ -19,4 +19,20 @@ public class Classes{
 
 		public String method(String arg){ return "SomeManager.method(" + arg + ");";}
 	}
+
+
+	public static class SomeDeeperManager{
+
+		private String     user;
+		private ApiService apiService;
+
+		public SomeDeeperManager(String user, ApiService apiService){
+			this.user = user;
+			this.apiService = apiService;
+		}
+
+		public String getUsersRepos(){
+			return apiService.getUser(user);
+		}
+	}
 }

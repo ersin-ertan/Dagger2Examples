@@ -1,8 +1,9 @@
 package com.nullcognition.practice01;
 
+import android.content.Intent;
 import android.os.Bundle;
-
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -10,6 +11,8 @@ import java.lang.annotation.RetentionPolicy;
 import javax.inject.Inject;
 import javax.inject.Scope;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import dagger.Module;
 import dagger.Provides;
 import dagger.Subcomponent;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity{
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		ButterKnife.bind(this);
 
 		//Local dependencies graph is constructed here
 		App.get(this).getAppComponent()
@@ -33,22 +37,18 @@ public class MainActivity extends AppCompatActivity{
 		String s = someManager.method("hi");
 	}
 
-//	@OnClick(R.id.btnShowRepositories)
-//	public void onShowRepositoriesClick(){
-//		presenter.onShowRepositoriesClick();
-//	}
-//
-//	public void showRepositoriesListForUser(User user){
-//		App.get(this).createUserComponent(user);
-//		startActivity(new Intent(this, AnotherActivity.class));
-//	}
-//
-//	public void showValidationError(){ etUsername.setError("Validation error"); }
-//
-//	public void showLoading(boolean loading){
-//		btnShowRepositories.setVisibility(loading ? View.GONE : View.VISIBLE);
-//		pbLoading.setVisibility(loading ? View.VISIBLE : View.GONE);
-//	}
+	@OnClick(R.id.btn_showRepos) public void showRepos(){ presenter.onShowReposClick();}
+
+	public void showReposForUser(String user){
+		App.get(this).createUserComponent(user);
+		startActivity(new Intent(this, AnotherActivity.class));
+	}
+
+	public void showValidationError(){ Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show(); }
+
+	public void showLoading(boolean loading){
+		Toast.makeText(MainActivity.this, "Show Loading" + String.valueOf(loading), Toast.LENGTH_SHORT).show();
+	}
 }
 
 

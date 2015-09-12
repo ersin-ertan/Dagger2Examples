@@ -24,9 +24,9 @@ class ApiService{
 
 @Module class ApiModule{
 
-//	@Provides @Singleton ApiService provideApiService(RestAdapter restAdapter){
-//		return restAdapter.create(GithubApiService.class);
-//	}
+	@Provides @Singleton ApiService provideApiService(){
+		return new ApiService();
+	}
 
 	@Provides
 	@Singleton UserManager provideUserManager(ApiService apiService){ return new UserManager(apiService); }

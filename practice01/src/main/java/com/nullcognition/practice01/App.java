@@ -5,11 +5,16 @@ package com.nullcognition.practice01;
 import android.app.Application;
 import android.content.Context;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import javax.inject.Scope;
 import javax.inject.Singleton;
 
 import dagger.Component;
 import dagger.Module;
 import dagger.Provides;
+import dagger.Subcomponent;
 
 public class App extends Application{
 
@@ -26,20 +31,20 @@ public class App extends Application{
 		                                 .build();
 	}
 
-//	UserComponent userComponent;
-//
-//	public UserComponent createUserComponent(User user){
-//		userComponent = appComponent.plus(new UserModule(user));
-//		return userComponent;
-//	}
-//
-//	public void releaseUserComponent(){
-//		userComponent = null;
-//	}
-//
-//	public UserComponent getUserComponent(){
-//		return userComponent;
-//	}
+	UserComponent userComponent;
+
+	public UserComponent createUserComponent(String user){
+		userComponent = appComponent.plus(new UserModule(user));
+		return userComponent;
+	}
+
+	public void releaseUserComponent(){
+		userComponent = null;
+	}
+
+	public UserComponent getUserComponent(){
+		return userComponent;
+	}
 }
 
 
@@ -57,8 +62,34 @@ public class App extends Application{
 }
 
 
-@Singleton @Component(modules = AppModule.class) interface AppComponent{
+@Singleton @Component(modules = { AppModule.class, ApiModule.class }) interface AppComponent{
 
 	MainActivityComponent plus(MainActivityModule mainActivityModule);
 
+	UserComponent plus(UserModule userModule);
+
+
 }
+
+
+@Singleton @Module class UserModule{
+
+	private String user;
+	public UserModule(String user){this.user = user;}
+
+	@Provides @UserScope String provideUser(){return user;}
+
+	@Provides @UserScope Classes.SomeDeeperManager provideManager(String user, ApiService apiService){
+		return new Classes.SomeDeeperManager(user, apiService);
+	}
+}
+
+
+@UserScope @Subcomponent(modules = UserModule.class) interface UserComponent{
+
+	AnotherActivityComponent plus(AnotherActivityModule anotherActivityModule);
+
+}
+
+
+@Scope @Retention(RetentionPolicy.RUNTIME) @interface UserScope{ }

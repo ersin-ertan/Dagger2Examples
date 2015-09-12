@@ -16,25 +16,15 @@ public class MainActivityPresenter{
 		this.userManager = userManager;
 	}
 
-//	public void onShowRepositoriesClick(){
-//		if(someClass.validUsername(username)){
-//			mainActivity.showLoading(true);
-//			userManager.getUser(username).subscribe(new SimpleObserver<User>(){
-//				@Override
-//				public void onNext(User user){
-//					mainActivity.showLoading(false);
-//					mainActivity.showRepositoriesListForUser(user);
-//				}
-//
-//				@Override
-//				public void onError(Throwable e){
-//					mainActivity.showLoading(false);
-//					mainActivity.showValidationError();
-//				}
-//			});
-//		}
-//		else{
-//			mainActivity.showValidationError();
-//		}
-//	}
+	public void onShowReposClick(){
+		int i = 1;
+		if(someClass.method(i) == i){
+			mainActivity.showLoading(true);
+			userManager.getUser(username);
+			// arbitrary method calls
+			mainActivity.showLoading(false);
+			mainActivity.showValidationError();
+			mainActivity.showReposForUser(username);
+		}
+	}
 }
