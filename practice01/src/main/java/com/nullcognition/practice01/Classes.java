@@ -4,6 +4,8 @@ package com.nullcognition.practice01;
 
 import android.app.Application;
 
+import com.nullcognition.practice01.api.ApiService;
+
 public class Classes{
 
 	public static class SomeClass{

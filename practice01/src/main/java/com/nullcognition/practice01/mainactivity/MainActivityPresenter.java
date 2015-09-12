@@ -1,6 +1,9 @@
-package com.nullcognition.practice01;
+package com.nullcognition.practice01.mainactivity;
 // ersin 12/09/15 Copyright (c) 2015+ All rights reserved.
 
+
+import com.nullcognition.practice01.Classes;
+import com.nullcognition.practice01.user.UserManager;
 
 public class MainActivityPresenter{
 

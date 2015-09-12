@@ -1,21 +1,19 @@
-package com.nullcognition.practice01;
+package com.nullcognition.practice01.mainactivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+import com.nullcognition.practice01.App;
+import com.nullcognition.practice01.Classes;
+import com.nullcognition.practice01.R;
+import com.nullcognition.practice01.anotheractivity.AnotherActivity;
 
 import javax.inject.Inject;
-import javax.inject.Scope;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import dagger.Module;
-import dagger.Provides;
-import dagger.Subcomponent;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -51,30 +49,3 @@ public class MainActivity extends AppCompatActivity{
 	}
 }
 
-
-@ActivityScope @Subcomponent(modules = MainActivityModule.class) interface MainActivityComponent{
-
-	void inject(MainActivity mainActivity);
-
-	MainActivityPresenter mainActivityPresenter();
-}
-
-
-@Module class MainActivityModule{
-
-	private MainActivity mainActivity;
-
-	public MainActivityModule(MainActivity mainActivity){
-		this.mainActivity = mainActivity;
-	}
-
-	@Provides @ActivityScope MainActivity provideMainActivity(){ return mainActivity; }
-
-	@Provides
-	@ActivityScope MainActivityPresenter provideMainActivityPresenter(Classes.SomeClass someClass, UserManager userManager){
-		return new MainActivityPresenter(mainActivity, someClass, userManager);
-	}
-}
-
-
-@Scope @Retention(RetentionPolicy.RUNTIME) @interface ActivityScope{ }
