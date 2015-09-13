@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity{
 		   .plus(new MainActivityModule(this))
 		   .inject(this);
 
+//		MainActivityComponent mac = App.get(this).getAppComponent().plus(new MainActivityModule(this));
+//		mac.inject(this); // done above
+//		MainActivityPresenter map         = mac.mainActivityPresenter();
+//		String                mapUsername = map.username; // do use this exposed variable?
+//		map.onShowReposClick(); // method calls are allowed bidirectionally (is it best practice?)
+
 		String s = someManager.method("hi");
 	}
 

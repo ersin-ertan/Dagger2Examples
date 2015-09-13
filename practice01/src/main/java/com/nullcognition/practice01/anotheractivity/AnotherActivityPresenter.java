@@ -14,4 +14,6 @@ public class AnotherActivityPresenter{
 		this.userManager = repositoriesManager;
 	}
 
+	public String method(String s){return s;}
+
 }
