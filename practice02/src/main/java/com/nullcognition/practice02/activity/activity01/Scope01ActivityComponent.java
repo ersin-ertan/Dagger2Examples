@@ -6,7 +6,8 @@ import com.nullcognition.practice02.activity.AbstractActivityComponent;
 
 import dagger.Subcomponent;
 
-@Subcomponent(modules = Activity01Module.class) public interface Scope01ActivityComponent extends AbstractActivityComponent{
+@ActivityScope01 @Subcomponent(modules = { Activity01Module.class })
+public interface Scope01ActivityComponent extends AbstractActivityComponent{
 
 	void inject(Activity01 activit01);
 }

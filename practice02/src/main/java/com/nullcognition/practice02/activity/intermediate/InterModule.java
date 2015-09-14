@@ -3,6 +3,7 @@ package com.nullcognition.practice02.activity.intermediate;
 
 
 import com.nullcognition.practice02.activity.ActScopeClass;
+import com.nullcognition.practice02.activity.ActScopeClassGlobal;
 import com.nullcognition.practice02.activity.ActivityScope;
 
 import dagger.Module;
@@ -10,11 +11,11 @@ import dagger.Provides;
 
 @Module public class InterModule{
 
-	// both the InterManager and InterModule will have the actScopeClass
-	private ActScopeClass actScopeClass;
-	public InterModule(int anInt){actScopeClass = new ActScopeClass(anInt);}
+	// both the InterManager and InterModule will have the actScopeClassGlobal
+	private ActScopeClassGlobal actScopeClassGlobal;
+	public InterModule(int anInt){actScopeClassGlobal = new ActScopeClassGlobal(anInt);}
 
-	@Provides @ActivityScope ActScopeClass provideActScopeClass(){return actScopeClass;}
+	@Provides @ActivityScope ActScopeClassGlobal provideActScopeClass(){return actScopeClassGlobal;}
 
 	// no primitives allowed as an argument
 	@Provides @ActivityScope InterManager provideInterManager(ActScopeClass actScopeClass){

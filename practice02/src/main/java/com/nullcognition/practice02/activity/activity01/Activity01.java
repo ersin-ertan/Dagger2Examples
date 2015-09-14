@@ -2,14 +2,19 @@ package com.nullcognition.practice02.activity.activity01;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.nullcognition.practice02.R;
-import com.nullcognition.practice02.activity.AbstractActivityComponent;
+import com.nullcognition.practice02.activity.ActScopeClass;
 import com.nullcognition.practice02.app.App;
+
+import javax.inject.Inject;
 
 public class Activity01 extends AppCompatActivity{
 
 	public static final int SCOPE = 1;
+
+	@Inject ActScopeClass actScopeClass;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -23,13 +28,15 @@ public class Activity01 extends AppCompatActivity{
 		// component brought forth by its inject method
 
 
-		// todo is the promblem that the module is not generic, or that the plus from the Intercomponent is not the right input or output type?
-		AbstractActivityComponent aac = App.get(this).getIntermediateComponent()
-		                                   .plusActivity01(new Activity01Module(this));
-		Scope01ActivityComponent s01ac = (Scope01ActivityComponent) aac;
-		s01ac.inject(this);
+		// casting is not required, because generalized type did not work
+		App.get(this).getIntermediateComponent()
+				.plusActivity01(new Activity01Module(this)) // scope01activitycomponent.inject(this)
+				.inject(this);
 
+		String s = "null";
+		if(actScopeClass != null){ s = String.valueOf(actScopeClass.getSelectedActivity());}
 
+		Toast.makeText(Activity01.this, s, Toast.LENGTH_SHORT).show();
 	}
 	@Override public void finish(){
 		App.get(this).releaseInterComponent();

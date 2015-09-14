@@ -13,7 +13,11 @@ import dagger.Provides;
 	public Activity01Module(final Activity01 a){ super(a, 1); }
 
 	@ActivityScope01 @Provides public ActScopeClass provideActScopeClass(){ return new ActScopeClass(); }
-	// to remove this we ask, can @Inject constructors be interleaved with another @Provides which provides
-	// the 2nd, non @Inject annotated constructor
+
+	// this was removed here because ActScopeClass does not require external state, thus we can annotate
+	// the no arg constructor of ActScopeClass with @Inject, however, in Activity02Module where we require
+	// external state, we use the @Provides method to provide the new ActScopeClass with the constructor arg
+	// but, since your assigning a scope to the class for an @Inject'ed const, we must verify that the assigned
+	// scope is overriding possible other scoping
 
 }

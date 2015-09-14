@@ -4,10 +4,9 @@ package com.nullcognition.practice02.activity;
 
 import android.app.Activity;
 
-import dagger.Component;
 import dagger.Subcomponent;
 
-@Subcomponent(modules = ActivityModule.class) public interface AbstractActivityComponent{
+@Subcomponent(modules = { ActivityModule.class }) public interface AbstractActivityComponent{
 
 	Activity providedActivity();
 }
