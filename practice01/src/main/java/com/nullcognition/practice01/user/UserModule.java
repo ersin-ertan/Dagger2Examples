@@ -12,7 +12,8 @@ import dagger.Provides;
 
 @Singleton @Module public class UserModule{
 
-	private String user;
+	private String user; // a primitive does not work, as it must be passed to the provideManager my class type
+	// via the previout provideUser
 	public UserModule(String user){this.user = user;}
 
 	@Provides @UserScope String provideUser(){return user;}

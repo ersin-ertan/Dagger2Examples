@@ -5,6 +5,10 @@ package com.nullcognition.practice02.app;
 import android.app.Application;
 
 import com.nullcognition.practice02.activity.Activity00;
+import com.nullcognition.practice02.activity.ActivityModule;
+import com.nullcognition.practice02.activity.activity01.Scope01ActivityComponent;
+import com.nullcognition.practice02.activity.intermediate.InterComponent;
+import com.nullcognition.practice02.activity.intermediate.InterModule;
 import com.nullcognition.practice02.appclasses.Caser;
 
 import dagger.Component;
@@ -23,6 +27,7 @@ public interface AppComponent{
 	// generic type returned, and stored in module, why explained in AbstractActivityComponent
 	Application getApplication();
 
-//	ActivityComponent plusActivityModule(ActivityModule activityModule);
+	// gives the ability for the appcomponent to add the subcomponent, which in turn can add its own subcomponent
+	InterComponent plusInter(InterModule interModule);
 
 }

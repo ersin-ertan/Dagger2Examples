@@ -3,6 +3,10 @@ package com.nullcognition.practice02.app;
 
 
 import android.app.Application;
+import android.content.Context;
+
+import com.nullcognition.practice02.activity.intermediate.InterComponent;
+import com.nullcognition.practice02.activity.intermediate.InterModule;
 
 
 public class App extends Application{
@@ -20,6 +24,17 @@ public class App extends Application{
 		}
 	}
 
-//	MySubcomponent mySubcomponent;
+	InterComponent intermediateComponent;
+	public InterComponent getIntermediateComponent(){ return intermediateComponent;}
+
+	//	// plus the subcomponent
+	public InterComponent createInterComponent(int external){
+		intermediateComponent = appComponent.plusInter(new InterModule(external));
+		return intermediateComponent;
+	}
+
+	public void releaseInterComponent(){ intermediateComponent = null; }
+
+	public static App get(Context c){return (App) c.getApplicationContext();}
 }
 

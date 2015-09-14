@@ -11,6 +11,23 @@
 	<TextView
 		android:text = "@string/hello_world"
 		android:layout_width = "wrap_content"
-		android:layout_height = "wrap_content"/>
+		android:layout_height = "wrap_content" android:id = "@+id/textView"
+        />
+
+    <Button
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Start Activity01"
+        android:id = "@+id/btn_activity01"
+        android:layout_below = "@+id/textView" android:layout_alignParentLeft = "true" android:layout_alignParentStart = "true"
+        />
+
+    <Button
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Start Activity02"
+        android:id = "@+id/btn_activity02"
+        android:layout_below = "@+id/btn_activity01" android:layout_alignParentLeft = "true" android:layout_alignParentStart = "true"
+        />
 
 </RelativeLayout>

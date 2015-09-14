@@ -3,4 +3,7 @@
 
 	<string name = "hello_world">Hello world!</string>
 	<string name = "action_settings">Settings</string>
+	<string name = "title_activity_">Activity</string>
+	<string name = "title_activity_01">Activity01</string>
+	<string name = "title_activity_02">Activity02</string>
 </resources>
