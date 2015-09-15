@@ -4,6 +4,8 @@ package com.nullcognition.practice03.activity;
 
 import com.nullcognition.practice03.AppComponent;
 import com.nullcognition.practice03.AppScope;
+import com.nullcognition.practice03.plus.PlusComponent;
+import com.nullcognition.practice03.plus.PlusModule;
 
 import dagger.Component;
 
@@ -15,4 +17,7 @@ public interface AppComponentEx extends AppComponent{
 
 	// must be type specific
 	void inject(MainActivity mainActivity);
+
+	PlusComponent plus(PlusModule plusModule);
+
 }

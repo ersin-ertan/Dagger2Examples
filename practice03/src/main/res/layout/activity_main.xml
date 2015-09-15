@@ -1,16 +1,62 @@
-<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-                xmlns:tools = "http://schemas.android.com/tools"
-                android:layout_width = "match_parent"
-                android:layout_height = "match_parent"
-                android:paddingLeft = "@dimen/activity_horizontal_margin"
-                android:paddingRight = "@dimen/activity_horizontal_margin"
-                android:paddingTop = "@dimen/activity_vertical_margin"
-                android:paddingBottom = "@dimen/activity_vertical_margin"
-                tools:context = ".MainActivity">
+<LinearLayout
+	android:layout_height = "match_parent"
+	android:layout_width = "match_parent"
+	android:orientation = "vertical"
+	android:paddingBottom = "@dimen/activity_vertical_margin"
+	android:paddingLeft = "@dimen/activity_horizontal_margin"
+	android:paddingRight = "@dimen/activity_horizontal_margin"
+	android:paddingTop = "@dimen/activity_vertical_margin"
+	tools:context = ".MainActivity"
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	>
 
 	<TextView
-		android:text = "@string/hello_world"
+		android:layout_height = "wrap_content"
 		android:layout_width = "wrap_content"
-		android:layout_height = "wrap_content"/>
+		android:text = "MainActivity"
+		/>
 
-</RelativeLayout>
+	<Button
+		android:id = "@+id/btn_plusProvided"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" android:text = "Create wrapper then get plus provideds int"
+		/>
+
+	<TextView
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "New Text"
+		android:id = "@+id/txtV_plusComponent"
+		android:layout_gravity = "center_horizontal"
+		/>
+
+	<Button
+		android:id = "@+id/btn_plusProvidedScoped"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" android:text = "Create wrapper then get plus scopedTwo provideds int"
+		/>
+
+	<TextView
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "New Text"
+		android:id = "@+id/txtV_plusTwoComponent"
+		android:layout_gravity = "center_horizontal"
+		/>
+
+	<TextView
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "New Text"
+		android:id = "@+id/txtV_plusTwoComponentTwo"
+		android:layout_gravity = "center_horizontal"
+		/>
+
+	<Button
+		android:id = "@+id/btn_releaseComponents"
+		android:layout_height = "wrap_content"
+		android:layout_width = "match_parent" android:text = "release plus and plustwo components"
+		/>
+
+</LinearLayout>
