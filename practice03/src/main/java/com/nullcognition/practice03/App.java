@@ -39,7 +39,7 @@ public class App extends Application{
 
 	public void releasePlusComponent(){ plusComponent = null; }
 	public PlusComponent createPlusComponent(){
-		plusComponent = ((AppComponentEx)appComponent).plus(new PlusModule());
+		plusComponent = ((AppComponentEx) appComponent).plus(new PlusModule());
 		return plusComponent;
 	}
 
