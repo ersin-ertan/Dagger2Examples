@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity{
 	private MainActivityComponent activityComponent;
 	public MainActivityComponent getActivityComponent(){return activityComponent;}
 
+//	@Inject SomeInjectedType someInjectedType; not working
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -43,6 +45,12 @@ public class MainActivity extends AppCompatActivity{
 			                                               .build();
 		}
 		activityComponent.inject(this); // injected into self, @Injects can now get fulfilled
+
+
+		// not working for now
+//		Integer integer = someInjectedType.getValueFromMap("theStringKey");
+//		Toast.makeText(MainActivity.this, integer.toString(), Toast.LENGTH_SHORT).show();
+
 	}
 
 	@Bind(R.id.textView) TextView textView;

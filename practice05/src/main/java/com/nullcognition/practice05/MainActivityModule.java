@@ -16,6 +16,13 @@ import dagger.Provides;
 	@Provides @MainActivity.ActivityScope(MainActivity.class) @AutoExpose(MainActivity.class)
 	public Activity provideActivity(){return activity;}
 
+	@Provides(type = Provides.Type.MAP)
+	@StringKey("theStringKey") Integer providetheStringKeysValue(){ return 2; }
+
+//	@dagger.MembersInjector // not needed if you allow dagger to create the graph for you
+
+//	@Provides public SomeInjectedType provideSomeInjectType(Map map){ return new SomeInjectedType(map); }
+
 //	@Provides @MainActivity.ActivityScope(MainActivity.class) public MainActivity.ProvidedLazily provideProvidedLazy(){ return new MainActivity.ProvidedLazily(); }
 
 } // @Provide may be swapped with a constructor @Inject if no external state is needed
