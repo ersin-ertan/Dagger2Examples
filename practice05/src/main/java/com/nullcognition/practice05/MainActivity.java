@@ -9,8 +9,10 @@ import android.widget.Toast;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.util.Random;
 
 import javax.inject.Inject;
+import javax.inject.Provider;
 import javax.inject.Scope;
 
 import autodagger.AutoComponent;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity{
 		textView.setText("lazy already gotten");
 		if(!isDone){
 			isDone = true;
-		textView.setText("starting get lazy");
+			textView.setText("starting get lazy");
 			Toast.makeText(MainActivity.this, "ProvidedLazySleep 3, 2, 1", Toast.LENGTH_SHORT).show();
 		}
 
@@ -62,6 +64,22 @@ public class MainActivity extends AppCompatActivity{
 			}
 		}, 500);
 	}
+
+	// provides a new binding each time get is called
+	@Inject Provider<ProvidedNewInstance> providedNewInstanceProvider;
+
+	@OnClick(R.id.btn_getNew) void getNew(final View view){
+		textView.setText(String.valueOf(providedNewInstanceProvider.get().id));
+	}
+
+	//	@MainActivity.ActivityScope(MainActivity.class) // because the object was scoped a new provided was not provided
+	public static class ProvidedNewInstance{
+
+		public final int id;
+
+		@Inject public ProvidedNewInstance(){id = new Random(System.currentTimeMillis()).nextInt();}
+	}
+
 
 	@MainActivity.ActivityScope(MainActivity.class)
 	public static class ProvidedLazily{
@@ -74,10 +92,10 @@ public class MainActivity extends AppCompatActivity{
 		public String getText(){return "provided lazy"; }
 	}
 
+
 	@Scope @Retention(RetentionPolicy.RUNTIME) public @interface ActivityScope{
 
 		Class<?> value();
 	}
 }
-
 

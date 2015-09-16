@@ -22,4 +22,12 @@
         android:layout_below = "@+id/textView" android:layout_alignParentLeft = "true" android:layout_alignParentStart = "true"
         />
 
+    <Button
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Get new"
+        android:id = "@+id/btn_getNew"
+        android:layout_below = "@+id/btn_getLazy" android:layout_alignParentLeft = "true" android:layout_alignParentStart = "true"
+        />
+
 </RelativeLayout>
