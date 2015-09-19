@@ -24,7 +24,7 @@ import dagger.Lazy;
 
 
 @MainActivity.ActivityScope(MainActivity.class) @AutoComponent(dependencies = App.class, modules = MainActivityModule.class) @AutoInjector
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements Subscribers{
 
 
 	private MainActivityComponent activityComponent;
@@ -51,6 +51,30 @@ public class MainActivity extends AppCompatActivity{
 //		Integer integer = someInjectedType.getValueFromMap("theStringKey");
 //		Toast.makeText(MainActivity.this, integer.toString(), Toast.LENGTH_SHORT).show();
 
+	}
+	Producer producer;
+	// method injection - requires the object(activity) to be first constructed, then injected to get this dependency
+	@Inject public void subToProducer(final Producer producer){ // will be called by dagger after construction
+		Toast.makeText(MainActivity.this, "Activity Subbed", Toast.LENGTH_SHORT).show();
+		producer.subscribe(this);
+		Toast.makeText(MainActivity.this, "producer post 1", Toast.LENGTH_SHORT).show();
+
+		new Handler().postDelayed(new Runnable(){
+			@Override public void run(){
+				producer.post(1);
+
+			}
+		}, 5000);
+	}
+
+	// acts like a constructor, but since you are injecting 'this' into the graph, and would need it to fulfill
+	// a dependency at the same time, this method injection will provide the producer object(which needs this activity)
+	// when its dependency is fulfilled, being the activity injecting itself
+	// get would be called from outside of the objects, via the producers post or see subToProducer method for the call
+	// right after sub as an example due to lack of a better one
+
+	@Override public void get(final int i){
+		Toast.makeText(MainActivity.this, "Producers.post to subscribers.get i:" + i, Toast.LENGTH_SHORT).show();
 	}
 
 	@Bind(R.id.textView) TextView textView;
@@ -79,6 +103,7 @@ public class MainActivity extends AppCompatActivity{
 	@OnClick(R.id.btn_getNew) void getNew(final View view){
 		textView.setText(String.valueOf(providedNewInstanceProvider.get().id));
 	}
+
 
 	//	@MainActivity.ActivityScope(MainActivity.class) // because the object was scoped a new provided was not provided
 	public static class ProvidedNewInstance{
