@@ -7,11 +7,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.inject.Scope;
 
 import butterknife.ButterKnife;
 import dagger.Component;
 import dagger.Module;
+import dagger.Provides;
 
 public class ThirdB{
 
@@ -56,4 +58,15 @@ public class ThirdB{
 @Module class ThirdBModule{
 
 	// use @Inject constructor with @ThirdBScope
+
+	@Provides @ThirdBScope @Named("1") AThirdBDependency provideAThirdBDependency1(){return new AThirdBDependency(1);}
+	@Provides @ThirdBScope @Named("2") AThirdBDependency provideAThirdBDependency2(){return new AThirdBDependency(2);}
+
+}
+
+
+class AThirdBDependency{
+
+	public int i = 99;
+	public AThirdBDependency(int ii){i = ii;}
 }
