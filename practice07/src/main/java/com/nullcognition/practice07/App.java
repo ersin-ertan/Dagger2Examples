@@ -9,6 +9,10 @@ import dagger.Module;
 import dagger.Provides;
 import rx.Observable;
 
+// trying out a way to answer
+// http://stackoverflow.com/questions/32738410/constructing-dependencies-graph-asynchronously-in-dagger-2
+// my moving the asynchronousity off the compile graph construction and towards the first use
+
 public class App extends Application{
 
 	private AppComponent app;
