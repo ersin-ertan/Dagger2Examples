@@ -11,7 +11,7 @@ buildscript {
         //  Gradle plugin to support annotation processors in Android Gradle builds & Android Studio
         classpath 'org.robolectric:robolectric-gradle-plugin:0.14.1'
         classpath 'com.jakewharton.hugo:hugo-plugin:1.1.0'
-        classpath 'me.tatarka:gradle-retrolambda:3.0.1'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.3'
 
     }
 }
