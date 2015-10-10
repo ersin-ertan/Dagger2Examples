@@ -15,3 +15,6 @@ Also note that some practice projects improperly inject the activity in to the a
 
 This source is currently my best documentation, once past the initial conceptualization.
 I may/or not present the concepts simply and thoroughly in the future, pending on my motivations and other projects that are engaging.
+
+
+![Activity Graphs](https://raw.githubusercontent.com/ersin-ertan/Dagger2Examples/master/activitygraphs/Dagger2ActivityGraphs.svg "Object-Module-Component")
