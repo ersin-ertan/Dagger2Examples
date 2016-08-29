@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		mainActivityComponent.inject(this);
+		getMainActivityComponent().inject(this);
 
 		if(savedInstanceState == null){
 			getSupportFragmentManager().beginTransaction()
