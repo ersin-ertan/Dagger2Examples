@@ -1,4 +1,4 @@
-##### TLDR; Everything is pretty old except for androiddagger2 module, where I take a look at greg kick second talk on the more advanced features of dagger, I consider the most clearest representation to be this module, however you may benifit from seeing my code-thought process/errors/notes along the way via the older modules
+#### TLDR; Everything is pretty old except for androiddagger2 module, where I take a look at greg kick's second talk on the more advanced features of dagger, I consider this to be the most clearest representation of how it works, however you may benefit from seeing my code-thought process/errors/notes along the way via the older modules.
 
 Culmination of projects by other members, the app module was my first attempts xx months ago.
 
