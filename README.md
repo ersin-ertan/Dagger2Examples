@@ -1,3 +1,5 @@
+##### TLDR; Everything is pretty old except for androiddagger2 module, where I take a look at greg kick second talk on the more advanced features of dagger, I consider the most clearest representation to be this module, however you may benifit from seeing my code-thought process/errors/notes along the way via the older modules
+
 Culmination of projects by other members, the app module was my first attempts xx months ago.
 
 Other modules are part of the learning process that range from simple to complex, some involve different architectural pattern which could throw off developers who have not worked within that system, thus it is recommended to study the topics individually prior to bringing them together.
