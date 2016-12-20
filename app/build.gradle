@@ -5,8 +5,8 @@ apply plugin: 'hugo'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+  compileSdkVersion rootProject.ext.compileSdkV
+  buildToolsVersion rootProject.ext.buildToolsV
 
     defaultConfig {
         applicationId "com.nullcognition.dagger2examples"
@@ -65,14 +65,14 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.0.0'
+  compile 'com.android.support:appcompat-v7:25.0.0'
 
-    def dagger_version = "2.1-SNAPSHOT"
+  def dagger_version = "2.8"
     compile "com.google.dagger:dagger:${dagger_version}"
     apt "com.google.dagger:dagger-compiler:${dagger_version}"
 
     provided 'org.glassfish:javax.annotation:10.0-b28'
-    compile 'com.android.support:support-v4:21.0.3'
+  compile 'com.android.support:support-v4:25.1.0'
     compile "org.projectlombok:lombok:1.16.0"
     compile 'com.jakewharton:butterknife:6.1.0'
 

@@ -1,1 +1,3 @@
-include ':app', ':chiu-ki', ':fernando', ':froger', ':practice', ':simple', ':activitygraphs', ':gk5885', ':autodagger', ':subcomponents', ':practice01', ':practice02', ':practice03', ':practice04', ':practice05', ':practice06', ':practice07'
+include ':app', ':chiu-ki', ':fernando', ':froger', ':practice', ':simple', ':activitygraphs',
+    ':gk5885', ':autodagger', ':subcomponents', ':practice01', ':practice02', ':practice03',
+    ':practice04', ':practice05', ':practice06', ':practice07', ':androiddagger2'
