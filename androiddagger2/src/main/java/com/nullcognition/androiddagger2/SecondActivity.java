@@ -75,8 +75,12 @@ public class SecondActivity extends AppCompatActivity {
         + " because it will be created in each activity via @Inject,\nalso see that its dependency(ObjectWithoutProvidesButIsConstructorAnnotatedAndHasADependecy) has a dependency of stringObject which should return the same value of the previous string since they both receive value from the same source:"
         + hasADependecyForActivityScope.owp.stringObject.s);
 
-    findViewById(R.id.button).setOnClickListener(view -> startActivity(
+    findViewById(R.id.button1).setOnClickListener(view -> startActivity(
         new Intent(SecondActivity.this, FirstActivity.class).addFlags(
+            Intent.FLAG_ACTIVITY_NEW_TASK)));
+
+    findViewById(R.id.button2).setOnClickListener(
+        view -> startActivity(new Intent(SecondActivity.this, ThirdActivity.class).addFlags(
             Intent.FLAG_ACTIVITY_NEW_TASK)));
   }
 

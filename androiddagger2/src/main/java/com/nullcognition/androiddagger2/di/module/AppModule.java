@@ -3,6 +3,7 @@ package com.nullcognition.androiddagger2.di.module;
 import android.content.Context;
 import com.nullcognition.androiddagger2.App;
 import com.nullcognition.androiddagger2.models.AppScopeSharedSingleton;
+import com.nullcognition.androiddagger2.models.BindsObject;
 import dagger.Module;
 import dagger.Provides;
 import javax.inject.Singleton;
@@ -25,5 +26,9 @@ import javax.inject.Singleton;
 
   @Provides @Singleton AppScopeSharedSingleton provideAppScopeSharedSingleton() {
     return new AppScopeSharedSingleton();
+  }
+
+  @Provides @Singleton BindsObject provideBindsObject() {
+    return new BindsObject();
   }
 }

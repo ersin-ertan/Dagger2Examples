@@ -78,6 +78,12 @@ import javax.inject.Inject;
  * ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped has the @Inject on the constructor, and
  * is unscoped with regards to the class annotation, thus it can be injected into any scope in the
  * graph.
+ *
+ * BindsObjectRequiringDependency is showcasing the interface module with @Binds instead of
+ * @Provides for objects that are passed in as the dependency and returned as the reply
+ *
+ *
+ *
  */
 
 public class App extends Application {
@@ -89,6 +95,11 @@ public class App extends Application {
   public static void toastLog(Context context, String s) {
     Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
     Log.v("app", s);
+  }
+
+  public static void toastLog(Context context, boolean b) {
+    Toast.makeText(context, String.valueOf(b), Toast.LENGTH_SHORT).show();
+    Log.v("app", String.valueOf(b));
   }
 
   public AppComponent getAppComponent() {

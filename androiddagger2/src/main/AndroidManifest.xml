@@ -12,8 +12,7 @@
       android:theme="@style/AppTheme">
     <activity
         android:name=".FirstActivity"
-        android:launchMode="singleInstance"
-        >
+        android:launchMode="singleInstance">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -22,8 +21,11 @@
     </activity>
     <activity
         android:name=".SecondActivity"
-        android:launchMode="singleInstance"
-        >
+        android:launchMode="singleInstance">
+    </activity>
+    <activity
+        android:name=".ThirdActivity"
+        android:launchMode="singleInstance">
     </activity>
   </application>
 

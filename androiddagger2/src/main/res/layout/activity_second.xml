@@ -11,17 +11,29 @@
 
 
   <Button
-      android:id="@+id/button"
+      android:id="@+id/button1"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:gravity="center"
-      android:text="Goto First Activity"
-      app:layout_constraintBottom_toBottomOf="@+id/activity_second"
+      android:text="Goto first Activity"
+      app:layout_constraintBottom_toTopOf="@+id/button2"
       app:layout_constraintLeft_toLeftOf="@+id/activity_second"
       app:layout_constraintRight_toRightOf="@+id/activity_second"
       app:layout_constraintTop_toTopOf="@+id/activity_second"
-      tools:layout_editor_absoluteX="108dp"
-      tools:layout_editor_absoluteY="232dp"
+      app:layout_constraintVertical_bias="1.0"
+
+      />
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_marginTop="8dp"
+      android:text="Goto third Activity"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="@+id/activity_second"
+      app:layout_constraintRight_toRightOf="@+id/activity_second"
+      app:layout_constraintTop_toBottomOf="@+id/button1"
+      app:layout_constraintVertical_bias="1.0"
       />
 
   <TextView

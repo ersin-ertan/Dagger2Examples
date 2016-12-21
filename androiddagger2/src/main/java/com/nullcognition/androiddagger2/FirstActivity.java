@@ -74,8 +74,12 @@ public class FirstActivity extends AppCompatActivity {
         "is ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped init ?: " + String.valueOf(
             canBeInjectedIntoAnyScope != null));
 
-    findViewById(R.id.button).setOnClickListener(view -> startActivity(
+    findViewById(R.id.button1).setOnClickListener(view -> startActivity(
         new Intent(FirstActivity.this, SecondActivity.class).addFlags(
+            Intent.FLAG_ACTIVITY_NEW_TASK)));
+
+    findViewById(R.id.button2).setOnClickListener(
+        view -> startActivity(new Intent(FirstActivity.this, ThirdActivity.class).addFlags(
             Intent.FLAG_ACTIVITY_NEW_TASK)));
   }
 
