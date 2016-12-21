@@ -33,7 +33,7 @@
       android:layout_marginBottom="8dp"
       android:layout_marginTop="8dp"
       android:text="Goto second Activity"
-      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/button3"
       app:layout_constraintLeft_toLeftOf="@+id/activity_third"
       app:layout_constraintRight_toRightOf="@+id/activity_third"
       app:layout_constraintTop_toBottomOf="@+id/button1"
@@ -41,4 +41,18 @@
 
       />
 
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_marginTop="8dp"
+      android:text="get lazy object"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="@+id/activity_third"
+      app:layout_constraintRight_toRightOf="@+id/activity_third"
+      app:layout_constraintTop_toBottomOf="@+id/button2"
+      app:layout_constraintVertical_bias="1.0"
+      />
 </android.support.constraint.ConstraintLayout>

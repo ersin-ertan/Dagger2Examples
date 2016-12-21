@@ -5,6 +5,7 @@ import com.nullcognition.androiddagger2.SecondActivity;
 import com.nullcognition.androiddagger2.ThirdActivity;
 import com.nullcognition.androiddagger2.di.module.ActivityModule;
 import com.nullcognition.androiddagger2.di.module.BindsInsteadOfProvidesModule;
+import com.nullcognition.androiddagger2.di.module.LazyAndProviderModule;
 import com.nullcognition.androiddagger2.di.module.SecondModuleButWithActivityScope;
 import com.nullcognition.androiddagger2.di.scope.ActivityScope;
 import dagger.Subcomponent;
@@ -18,7 +19,8 @@ import dagger.Subcomponent;
 // and all of their object they provide must adhere to no higher than the this scope, thus you will
 // not see @singleton annotated provides from any of the modules within this subcomponents module = {...} set
 @Subcomponent(modules = {
-    ActivityModule.class, SecondModuleButWithActivityScope.class, BindsInsteadOfProvidesModule.class
+    ActivityModule.class, SecondModuleButWithActivityScope.class,
+    BindsInsteadOfProvidesModule.class, LazyAndProviderModule.class
 }) public interface ActivityComponent {
 
   void inject(FirstActivity firstActivity);

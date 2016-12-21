@@ -80,10 +80,12 @@ import javax.inject.Inject;
  * graph.
  *
  * BindsObjectRequiringDependency is showcasing the interface module with @Binds instead of
+ *
  * @Provides for objects that are passed in as the dependency and returned as the reply
  *
- *
- *
+ * Use of @Provider and @Lazy in the injecting class to showcase how a your call to get the object
+ * can return a new object on each call(for provider) and how you can delay initialization with
+ * @Lazy and but use the get as if it was a singleton for that calling scope.
  */
 
 public class App extends Application {
@@ -100,6 +102,11 @@ public class App extends Application {
   public static void toastLog(Context context, boolean b) {
     Toast.makeText(context, String.valueOf(b), Toast.LENGTH_SHORT).show();
     Log.v("app", String.valueOf(b));
+  }
+
+  public static void toastLog(Context context, int i) {
+    Toast.makeText(context, String.valueOf(i), Toast.LENGTH_SHORT).show();
+    Log.v("app", String.valueOf(i));
   }
 
   public AppComponent getAppComponent() {
