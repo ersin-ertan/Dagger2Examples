@@ -8,7 +8,9 @@ import com.nullcognition.androiddagger2.di.component.AppComponent;
 import com.nullcognition.androiddagger2.di.component.DaggerAppComponent;
 import com.nullcognition.androiddagger2.di.module.AppModule;
 import com.nullcognition.androiddagger2.di.module.InstancedModuleNeededForAppComponentBuilding;
+import com.nullcognition.androiddagger2.models.ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped;
 import com.nullcognition.androiddagger2.models.StringObject;
+import javax.inject.Inject;
 
 /**
  * Created by ersin-ertan on 12/20/16.
@@ -72,11 +74,17 @@ import com.nullcognition.androiddagger2.models.StringObject;
  * constructor. So you are saying, I don't need a module of @Provides, I just need one object
  * and that object is obtained and exposed explicitly from within the graph.
  * This is a form of manual injection. See firstActivity for owpbica = ...;
+ *
+ * ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped has the @Inject on the constructor, and
+ * is unscoped with regards to the class annotation, thus it can be injected into any scope in the
+ * graph.
  */
 
 public class App extends Application {
 
   AppComponent appComponent;
+
+  @Inject ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped canBeInjectedAnywhere;
 
   public static void toastLog(Context context, String s) {
     Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
@@ -96,5 +104,7 @@ public class App extends Application {
         //.nonInstantiatedModule(new NonInstantiatedModule())
         .build();
     appComponent.inject(this);
+
+    Log.v("inj", canBeInjectedAnywhere.toString());
   }
 }

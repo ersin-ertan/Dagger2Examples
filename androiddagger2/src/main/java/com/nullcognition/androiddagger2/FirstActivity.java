@@ -11,6 +11,7 @@ import com.nullcognition.androiddagger2.models.AppScopeSharedSingleton;
 import com.nullcognition.androiddagger2.models.IntObject;
 import com.nullcognition.androiddagger2.models.ObjectWithoutProvidesButIsConstructorAnnotated;
 import com.nullcognition.androiddagger2.models.ObjectWithoutProvidesButIsConstructorAnnotatedAndHasADependecyForActivityScope;
+import com.nullcognition.androiddagger2.models.ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped;
 import com.nullcognition.androiddagger2.models.StaticProvideSingleton;
 import com.nullcognition.androiddagger2.models.StringObject;
 import javax.inject.Inject;
@@ -25,6 +26,8 @@ public class FirstActivity extends AppCompatActivity {
 
   // note I am not @Inject annotated
   ObjectWithoutProvidesButIsConstructorAnnotated owpbica;
+
+  @Inject ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped canBeInjectedIntoAnyScope;
 
   ActivityComponent activityComponent;
 
@@ -53,7 +56,7 @@ public class FirstActivity extends AppCompatActivity {
     // would be exposed explicitly vie the methods in appComponent, this is a form of manual injection
     owpbica =
         ((App) getApplication()).getAppComponent().objectWithoutProvidesButIsConstructorAnnotated();
-    App.toastLog(this, "is owpbica init ?: " + owpbica.toString());
+    App.toastLog(this, "is owpbica init ?: " + String.valueOf(owpbica != null));
 
     ((TextView) findViewById(R.id.tv1)).setText("is ...hasADependecyForActivityScope init ?: "
         + hasADependecyForActivityScope.stringObject.s
@@ -66,6 +69,10 @@ public class FirstActivity extends AppCompatActivity {
         + " \nbecause it will be created in each activity if required via @Inject 'ed into the activity"
         + "\n its dependencys' stringObject value is "
         + hasADependecyForActivityScope.owp.stringObject.s);
+
+    App.toastLog(this,
+        "is ObjectWithoutProvidesButIsConstructorAnnotatedUnscoped init ?: " + String.valueOf(
+            canBeInjectedIntoAnyScope != null));
 
     findViewById(R.id.button).setOnClickListener(view -> startActivity(
         new Intent(FirstActivity.this, SecondActivity.class).addFlags(
