@@ -4,6 +4,10 @@ import com.nullcognition.androiddagger2.App;
 import com.nullcognition.androiddagger2.di.module.ActivityModule;
 import com.nullcognition.androiddagger2.di.module.AppModule;
 import com.nullcognition.androiddagger2.di.module.InstancedModuleNeededForAppComponentBuilding;
+import com.nullcognition.androiddagger2.di.module.MyModuleA;
+import com.nullcognition.androiddagger2.di.module.MyModuleB;
+import com.nullcognition.androiddagger2.di.module.MyModuleC;
+import com.nullcognition.androiddagger2.di.module.MyModuleD;
 import com.nullcognition.androiddagger2.di.module.NonInstantiatedModule;
 import com.nullcognition.androiddagger2.di.module.SecondModuleButWithActivityScope;
 import com.nullcognition.androiddagger2.models.ObjectWithoutProvidesButIsConstructorAnnotated;
@@ -34,4 +38,9 @@ import javax.inject.Singleton;
 
   // one of my points of confusion is the purpose of this method, see app notes "A large point..."
   ObjectWithoutProvidesButIsConstructorAnnotated objectWithoutProvidesButIsConstructorAnnotated();
+
+  // testing builders
+  ComponentWithAbstractBuilder componentWithAbstractBuilder(MyModuleA myModA, MyModuleB myModB);
+
+  ComponentWithInterfaceBuilder componentWithInterfaceBuilder(MyModuleC myModC, MyModuleD myModD);
 }

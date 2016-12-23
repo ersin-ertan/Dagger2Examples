@@ -27,6 +27,8 @@
         android:name=".ThirdActivity"
         android:launchMode="singleInstance">
     </activity>
+    <activity android:name=".FourthActivity">
+    </activity>
   </application>
 
 </manifest>

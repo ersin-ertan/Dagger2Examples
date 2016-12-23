@@ -86,6 +86,13 @@ import javax.inject.Inject;
  * Use of @Provider and @Lazy in the injecting class to showcase how a your call to get the object
  * can return a new object on each call(for provider) and how you can delay initialization with
  * @Lazy and but use the get as if it was a singleton for that calling scope.
+ *
+ * Using component builders: Each component dependency and module without a visible default
+ * constructor must be set explicitly, but any module with a default or no-args constructor
+ * accessible to the component implementation may be elided.
+ * component has no component dependencies and only no-arg modules, the generated component will
+ * also have a factory method create(). SomeComponent.create() and SomeComponent.builder().build()
+ * are both valid
  */
 
 public class App extends Application {
